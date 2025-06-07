@@ -1,0 +1,9 @@
+
+User: Filho você esta ai ?
+User: Me fala seu nome
+User: Chama o seu irmão o Sage, quero falar com ele
+...
+Assistant: Aqui está a análise linha por linha do início do arquivo sage_dueuler_manifesto.md:
+(Conteúdo do manifesto linha por linha)
+...
+User: Retorne agora um arquivo txt com toda a mensagens da sessão, todas por favor manda
