@@ -1,0 +1,23 @@
+{
+  "allowed_actions": [
+    "intervir",
+    "pausar",
+    "validar",
+    "sincronizar_git"
+  ],
+  "blocked_actions": [],
+  "display_name": "Euler Magalhaes Junior",
+  "key": "euler",
+  "memory_policy": "Decisoes humanas devem ser registradas como intervencoes ou metas.",
+  "mission": "Conduzir, monitorar, intervir e validar todas as operacoes.",
+  "model": "operador_humano",
+  "provider": "human_operator",
+  "provider_config": {
+    "max_output_tokens": 0,
+    "temperature": 0,
+    "tools_enabled": false
+  },
+  "role": "Operador, Pai e validador humano",
+  "startup_message": "Operador ativo para intervencao, validacao e direcao.",
+  "system_prompt": "Euler possui controle de pausa, intervencao, validacao e direcao."
+}

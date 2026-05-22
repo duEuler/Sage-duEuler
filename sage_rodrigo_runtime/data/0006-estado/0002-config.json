@@ -1,0 +1,11 @@
+{
+  "autostart_enabled": false,
+  "enabled_actors": {
+    "euler": true,
+    "rodrigo": true,
+    "sage": true
+  },
+  "heartbeat_interval_seconds": 30,
+  "silence_alert_seconds": 75,
+  "updated_at": "2026-05-22T00:38:12-03:00"
+}
