@@ -1,0 +1,26 @@
+{
+  "directives_loaded": true,
+  "last_error": "escolha OpenAI, Gemini ou Ollama como provedor padrao antes de iniciar",
+  "last_tick": null,
+  "mode": "config_required",
+  "readiness": {
+    "github": {
+      "git_root": "C:\\GIT-UTUC\\Ceasa",
+      "issues": [],
+      "ok": true,
+      "remote": "origin\thttps://github.com/MarceloDuretti/Ceasa.git (fetch)\norigin\thttps://github.com/MarceloDuretti/Ceasa.git (push)"
+    },
+    "issues": [
+      "escolha OpenAI, Gemini ou Ollama como provedor padrao antes de iniciar"
+    ],
+    "ok": false,
+    "provider": {
+      "issues": [
+        "escolha OpenAI, Gemini ou Ollama como provedor padrao antes de iniciar"
+      ],
+      "ok": false,
+      "usable": []
+    }
+  },
+  "updated_at": "2026-05-22T03:03:43.536-03:00"
+}
