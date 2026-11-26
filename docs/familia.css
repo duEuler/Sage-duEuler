@@ -115,3 +115,72 @@ button.action { color: var(--night-deep); background: var(--amber); font: inheri
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Home narrativa: a página funciona como uma sequência de cenas, não como um mural de cartões. */
+body {
+  background: radial-gradient(circle at 78% 8%, #39206d 0, transparent 28rem), radial-gradient(circle at 8% 46%, #073f5c 0, transparent 30rem), linear-gradient(160deg, #060a18 0%, #0b1228 47%, #100b22 100%);
+}
+.masthead, main, footer { width: min(100% - 4rem, 84rem); }
+.masthead { padding-block: 1.15rem 1rem; border-bottom-color: #5fcce666; }
+.hero { min-height: min(60rem, 94svh); grid-template-columns: minmax(0, .9fr) minmax(22rem, 1.1fr); gap: clamp(2rem, 7vw, 7rem); padding-block: clamp(5rem, 12vw, 10rem); isolation: isolate; }
+.hero::before { right: 8%; top: 15%; width: 52rem; height: 32rem; border-color: #7a5de055; box-shadow: 0 0 8rem #5d2bb655, inset 0 0 6rem #147da044; }
+.hero::after { background-size: 4.4rem 4.4rem; opacity: .16; }
+.hero > div:first-child { z-index: 2; }
+.hero h1 { max-width: 8ch; font-size: clamp(4.4rem, 9.4vw, 9.2rem); line-height: .91; }
+.hero p:not(.eyebrow):not(.profile-meta) { max-width: 42ch; font-size: clamp(1.15rem, 1.9vw, 1.45rem); line-height: 1.55; }
+.hero .eyebrow { font-size: .86rem; }
+.sculpture { min-height: min(42rem, 68vw); background: linear-gradient(140deg, #101c3b99, #3d1b5777), url("retratos/guardiao.webp") center / cover; border: 1px solid #7ad9eb66; border-radius: 1.4rem; box-shadow: 0 2rem 6rem #02040caa, 0 0 4rem #ff8b3b22; transform: rotate(2deg); overflow: hidden; }
+.sculpture::before { content: "O irmão mais velho vigia a passagem"; position: absolute; left: 1.2rem; bottom: 1.1rem; z-index: 5; color: #f8d19c; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
+.sculpture::after { content: ""; position: absolute; inset: 0; z-index: 4; background: linear-gradient(180deg, transparent 46%, #070b1bcc 100%); pointer-events: none; }
+.seal { opacity: .7; mix-blend-mode: screen; }
+.seal-sage { --x: -68%; --y: -28%; }
+.seal-rodrigo { --x: 5%; --y: 12%; }
+.seal-pabblo { --x: 68%; --y: 42%; }
+.section, .hero { scroll-margin-top: 5.5rem; }
+.section { min-height: 72svh; display: grid; align-content: center; padding-block: clamp(5rem, 10vw, 10rem); border-top-color: #55738d66; position: relative; }
+.section::before { content: ""; position: absolute; inset: 0 -20vw; z-index: -1; opacity: .25; background: radial-gradient(circle at 85% 35%, #6944a955, transparent 23rem); pointer-events: none; }
+.section > h2, .section > p, .section > .links, .section > article, .section > ol, .section > .profiles, .section > .decision-grid, .section > .welcome-steps { width: min(100%, 63rem); }
+.section > h2 { font-size: clamp(3.3rem, 7vw, 6.8rem); max-width: 12ch; margin-bottom: 1.3rem; }
+.section > p { font-size: clamp(1.12rem, 1.7vw, 1.42rem); line-height: 1.65; }
+#historia { background: linear-gradient(110deg, #111e3d99, transparent 70%), url("retratos/sage.webp") 92% 50% / min(38rem, 50vw) auto no-repeat; }
+#cronicas { background: linear-gradient(110deg, #101c3eee 20%, transparent 80%), url("retratos/pabblo.webp") 92% 48% / min(34rem, 46vw) auto no-repeat; }
+#revisao { background: linear-gradient(110deg, #17102e99, transparent 80%), url("retratos/rodrigo.webp") 92% 48% / min(34rem, 46vw) auto no-repeat; }
+.profiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.3rem; }
+.profiles article { min-height: 34rem; padding: 1.3rem; border-radius: 1rem; background: #101a2dcc; border-color: #55738d88; box-shadow: 0 1.2rem 3rem #03050c55; }
+.profiles article:hover { transform: translateY(-.45rem); border-color: var(--blue); box-shadow: 0 1.8rem 4rem #03050c99, 0 0 2rem #248ea933; }
+.portrait { aspect-ratio: 4 / 3; border-radius: .75rem; }
+.profiles h3 { font-size: 2rem; }
+.card-role { margin: 1.1rem 0 0; color: var(--orange) !important; font-size: .76rem !important; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.timeline { max-width: 62rem; }
+.timeline li { grid-template-columns: 3rem 1fr; gap: 1.3rem; padding-bottom: 3.3rem; }
+.timeline li::before { display: none; }
+.timeline li + li { margin-left: 1.45rem; padding-left: 1.5rem; }
+.timeline-mark { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border: 1px solid var(--amber); border-radius: 50%; color: var(--amber); font-family: Georgia, serif; font-size: 1.15rem; background: #14152d; box-shadow: 0 0 1.5rem #ffb34744; }
+.timeline h3 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
+.journal article { border-radius: 1.1rem; background: #101a2dcc; border-color: #55738d88; box-shadow: 0 1.4rem 3rem #03050c66; }
+.journal article p { font-size: 1.18rem; line-height: 1.75; }
+.decision-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-block: 1.5rem 2rem; }
+.decision-grid p { margin: 0; padding: 1.5rem; border-left: 2px solid var(--orange); background: #101a2d99; }
+.decision-grid strong, .decision-grid span { display: block; }
+.decision-grid strong { color: var(--amber); font: 2rem Georgia, serif; }
+.decision-grid span { margin-top: .55rem; color: var(--muted); }
+.welcome-steps { display: flex; flex-wrap: wrap; gap: .75rem; margin-block: 1.5rem; }
+.welcome-steps span { padding: .8rem 1rem; border: 1px solid #55738d88; border-radius: .7rem; color: var(--muted); background: #101a2dcc; }
+.welcome-steps b { margin-right: .55rem; color: var(--orange); }
+.hero, .section { animation: scene-in 900ms both; animation-timeline: view(); animation-range: entry 0% cover 24%; }
+@keyframes scene-in { from { opacity: .15; transform: translateY(3rem); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 760px) {
+  .masthead, main, footer { width: min(100% - 2rem, 84rem); }
+  .hero { grid-template-columns: 1fr; min-height: 86svh; padding-block: 4.5rem 3rem; }
+  .hero h1 { font-size: clamp(3.8rem, 16vw, 6rem); }
+  .sculpture { min-height: 25rem; transform: none; }
+  .section { min-height: auto; padding-block: 5rem; }
+  .section > h2 { font-size: clamp(2.9rem, 14vw, 5rem); }
+  #historia, #cronicas, #revisao { background-size: 16rem auto; background-position: 110% 94%; }
+  .profiles, .decision-grid { grid-template-columns: 1fr; }
+  .profiles article { min-height: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero, .section { animation: none; }
+  .profiles article { transition: none; }
+}
