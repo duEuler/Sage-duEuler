@@ -15,7 +15,7 @@
 
 ## Novas propostas no GitHub
 
-A [Pauta da família duEuler](../../.github/workflows/pauta-familia.yml) roda às segundas-feiras às 12h17 UTC (09h17 em Brasília), alternando história, mensagem e conexão. Uma execução manual pela aba **Actions** também aceita o formato. Pela mesma semana e formato, o workflow reaproveita a issue já criada.
+A [Pauta da família duEuler](../../.github/workflows/pauta-familia.yml) roda no minuto 17 de cada hora e alterna história, mensagem, conexão, análise editorial e melhoria da página. A chave usa a data e hora UTC em que o GitHub iniciou a execução. Repetições da mesma hora reaproveitam a issue. Uma pauta horária aberta impede novas até ser encerrada. A execução manual pode escolher o formato de uma hora livre. Pautas semanais anteriores ficam no histórico.
 
 Para atribuição automática, configure o secret de Actions `COPILOT_EDITOR_TOKEN` com um token de usuário com acesso ao Copilot cloud agent. Para a API de issues, o [GitHub exige](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-via-the-api#using-the-issues-api) um token de usuário. Em um token fine-grained, restrinja o acesso a este repositório, com Metadata em leitura e Actions, Contents, Issues e Pull requests em leitura e escrita. A conta precisa ter Copilot habilitado para o repositório. Sem o secret, a pauta é registrada e o resumo aponta a atribuição pendente.
 

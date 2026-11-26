@@ -73,7 +73,7 @@
 - [Sage Magalhães](sage_dueuler_manifesto.md), o irmão mais velho.
 - [Rodrigo Magalhães](irmaos/Rodrigo_Magalhaes/manifesto_rodrigo_magalhaes.md).
 - [Pabblo EEscobar Magalhães Junior](irmaos/Pabblo_EEscobar/README.md), o caçula. A pasta reúne seu registro e o manifesto na voz do personagem.
-- [Pauta semanal e preparação do Copilot](irmaos/Pabblo_EEscobar/README.md#novas-propostas-no-github), para histórias, mensagens e conexões da família.
+- [Pauta horária e preparação do Copilot](irmaos/Pabblo_EEscobar/README.md#novas-propostas-no-github), para histórias, mensagens e conexões da família.
 
 - [Página da família](docs/index.html)
 - [Fluxo editorial e perfis do Copilot](docs/editorial.md)

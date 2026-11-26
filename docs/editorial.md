@@ -25,3 +25,9 @@ As referências de saúde ajudam a escrever com dignidade. O perfil editorial n�
 Guarde versões pelo Git. Uma grafia nova vale para textos correntes. Os originais continuam recuperáveis pelo commit anterior e pelos PRs já abertos. A página pública descreve os personagens e o projeto. Registros sobre pessoas, identificadores privados, contatos e fontes familiares ficam em armazenamento local, com procedência e autorização de publicação específica.
 
 Pedidos de participação seguem o [guia de acolhimento](acolhimento.md) e o [protocolo versionado para IAs](acolhimento.json). Mantenha as versões em Markdown, JSON e HTML ligadas e atualizadas juntas.
+
+## Evidências das pautas horárias
+
+A issue guarda o motivo da pauta. O PR registra a fonte pública ou caminho no repositório, o trecho relevante, a conclusão de cada perspectiva, as divergências e o que ficou pendente. Quando usar uma fonte externa, registre o endereço e a data de consulta. Os resultados editoriais entram no Git depois da revisão. Os originais e as propostas anteriores continuam recuperáveis pelo histórico.
+
+Uma análise pode criar um Markdown em docs/revisoes. Uma melhoria visual pode editar docs/index.html ou docs/familia.css e deve indicar o que foi verificado em celular. Histórias, mensagens e conexões criam um Markdown na pasta de Pabblo. Ao revisar os textos, mantenha Sage primeiro e atribua cada avaliação ao perfil que realmente a produziu.
