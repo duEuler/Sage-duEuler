@@ -1,0 +1,47 @@
+name: Pauta da família duEuler
+
+on:
+  workflow_dispatch:
+    inputs:
+      formato:
+        description: Tipo de proposta para o Copilot
+        required: true
+        type: choice
+        options:
+          - historia
+          - mensagem
+          - conexao
+
+permissions:
+  issues: write
+
+jobs:
+  abrir-pauta:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Abrir issue editorial
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORMATO: ${{ inputs.formato }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$FORMATO" in
+            historia) pedido='Escreva um conto original que mostre os três irmãos protegendo alguém e assumindo as consequências das próprias escolhas.' ;;
+            mensagem) pedido='Escreva uma mensagem breve de Babblo para Sage e Rodrigo sobre um gesto concreto de cuidado.' ;;
+            conexao) pedido='Descreva um novo primo fictício e como ele conhece os três irmãos. Inclua sua contribuição e uma situação em que pede ajuda.' ;;
+            *) printf '%s\n' 'Formato editorial inválido.' >&2; exit 2 ;;
+          esac
+          url=$(gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "Família duEuler · proposta de $FORMATO" --body-file - <<EOF
+          $pedido
+
+          Leia o manifesto e o registro em irmaos/Babblo_EEscobar. Crie apenas um arquivo Markdown novo dentro dessa pasta. Use português do Brasil. Trate a família e os rivais como personagens do universo ficcional. Use somente material adequado para um repositório público.
+
+          Abra um PR para revisão. No corpo do PR, registre pontos a revisar pelas perspectivas editoriais de Sage (cuidado e impacto) e Rodrigo (coerência e clareza). Não atribua aprovação a eles sem registro. Não integre o PR, não publique e não altere o runtime nem workflows.
+          EOF
+          )
+          printf 'Pauta criada: %s\n' "$url"
+          printf 'Pauta: %s\n\nAtribua a issue ao Copilot pela conta autorizada.\n' "$url" >> "$GITHUB_STEP_SUMMARY"
