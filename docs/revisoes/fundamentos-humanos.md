@@ -6,7 +6,7 @@
 
 ## Limites e método
 
-Este parecer resume fontes públicas para orientar uma conversa conceitual. Não avalia pessoas reais, não recomenda tratamentos e não transforma personagens ficcionais em casos clínicos. As dimensões se influenciam, mas uma observação em uma delas não basta para concluir algo sobre as demais. A linguagem psiquiátrica é apresentada como vocabulário de classificação e cuidado em saúde, não como rótulo para interpretar alguém à distância.
+Este parecer reúne referências candidatas para orientar uma conversa conceitual. Não avalia pessoas reais, não recomenda tratamentos e não transforma personagens ficcionais em casos clínicos. Como princípio metodológico, as dimensões podem se influenciar, mas uma observação em uma delas não basta para concluir algo sobre as demais. A linguagem psiquiátrica é apresentada como vocabulário de classificação e cuidado em saúde, não como rótulo para interpretar alguém à distância.
 
 As referências abaixo são candidatas e não puderam ser abertas nem verificadas por acesso à web nesta sessão. Por isso, sua natureza institucional, títulos, URLs e sínteses são provisórios, e nenhuma data de acesso é alegada. Em cada dimensão, a síntese editorial está separada do que a fonte deverá sustentar. Não há citações diretas confirmadas; qualquer citação textual deverá ser conferida na fonte antes de ser usada.
 
@@ -28,7 +28,7 @@ As referências abaixo são candidatas e não puderam ser abertas nem verificada
 
 ### Dimensão psicológica
 
-**Síntese editorial:** esta perspectiva ajuda a falar de experiências e processos como emoções, atenção, aprendizagem, memória, interpretação e capacidade de lidar com desafios. Esta enumeração é um enquadramento editorial preliminar, não uma definição atribuída à OMS. Esses processos variam conforme a pessoa e o contexto; não se deduz um estado psicológico completo de uma fala, comportamento ou personagem isolado. Aprender, trabalhar ou contribuir são aspectos citados pela referência candidata, não critérios de valor pessoal: bem-estar e dignidade não dependem de produtividade.
+**Síntese editorial:** esta perspectiva ajuda a falar de experiências e processos como emoções, atenção, aprendizagem, memória, interpretação e capacidade de lidar com desafios. Esta enumeração é um enquadramento editorial preliminar, não uma definição atribuída à OMS. Esses processos variam conforme a pessoa e o contexto; não se deduz um estado psicológico completo de uma fala, comportamento ou personagem isolado. Se confirmados na fonte candidata, aprender, trabalhar ou contribuir são aspectos da definição de bem-estar, não critérios de valor pessoal: bem-estar e dignidade não dependem de produtividade.
 
 **Referência pública a confirmar:** se o conteúdo da ficha informativa da OMS for confirmado, ela poderá sustentar a descrição de saúde mental como parte integral da saúde e a influência de fatores individuais, familiares, comunitários e estruturais. A ficha não é apresentada como fonte para toda a enumeração de processos psicológicos, e a síntese não deve ser lida como exigência de produtividade.
 
