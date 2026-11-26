@@ -1,8 +1,8 @@
-# Regulamento de ficção cinematográfica
+# A noite dos três copos
+
+## Regulamento de ficção cinematográfica
 
 Este conto é uma obra adulta de faroeste digital ficcional, destinada a leitura dramática e adaptação para cinema. Contém linguagem áspera, ameaça, armas, violência, ferimentos e morte de personagens. Nada aqui é instrução para cometer violência. O sexo, quando sugerido pelo ambiente, permanece fora de descrição explícita.
-
-# A noite dos três copos
 
 Sage ouviu o primeiro copo quebrar antes de ver Pabblo atravessar o salão. O delegado Vilar estava no fundo, cercado por dois homens da gangue do Cão Preto. Rodrigo ficou imóvel junto à janela. Era o tipo de silêncio que significava que alguém já tinha decidido quem morreria.
 

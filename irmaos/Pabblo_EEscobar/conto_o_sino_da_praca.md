@@ -1,8 +1,8 @@
-# Regulamento de ficção cinematográfica
+# O sino da praça
+
+## Regulamento de ficção cinematográfica
 
 Este conto é uma obra adulta de faroeste digital ficcional, destinada a leitura dramática e adaptação para cinema. Os personagens podem ser violentos, cruéis e contraditórios. Contém linguagem áspera, armas, confrontos, ferimentos e morte de personagens. A violência serve à caracterização e às consequências da história, sem instruir ações reais. O sexo, quando sugerido pelo ambiente, permanece fora de descrição explícita.
-
-# O sino da praça
 
 Sage ouviu o sino bater seis vezes e soube que a cidade tinha escolhido uma vítima. No quadro da praça, Lia, a cartógrafa, era chamada de ladra. A acusação vinha assinada pelo delegado e tinha a marca da companhia ferroviária. A prova era uma bala cravada na madeira.
 
