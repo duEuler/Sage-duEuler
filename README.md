@@ -78,3 +78,10 @@
 - [Página da família](docs/index.html)
 - [Fluxo editorial e perfis do Copilot](docs/editorial.md)
 - [Como participar](docs/acolhimento.md) · [Protocolo para IAs em JSON](docs/acolhimento.json) · [Página de acolhimento](docs/index.html#acolhimento)
+
+## PWA e atualizações
+
+- [Abrir o site da família](https://dueuler.github.io/Sage-duEuler/) ou consultar [o código da página](docs/index.html).
+- Após a primeira visita, as crônicas e os formatos públicos ficam disponíveis offline. O menu de instalação depende do navegador.
+- O GitHub Pages publica mudanças do diretório docs após entrarem na main. Para informar uma nova edição, atualize a seção Atualizações e docs/atualizacoes.json no mesmo commit. Mude o ID apenas para uma novidade que mereça aviso.
+- O botão Ativar avisos usa permissão do navegador e verifica novidades enquanto o app está aberto. Web Push com o app fechado depende de um serviço de inscrições e envio, separado do Pages.
