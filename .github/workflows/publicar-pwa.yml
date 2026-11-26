@@ -8,6 +8,8 @@ on:
       - 'irmaos/**'
       - 'sage_dueuler_manifesto.md'
       - 'tools/gerar-biblioteca.mjs'
+      - 'tools/atualizar-readme.mjs'
+      - 'README.md'
       - '.github/workflows/publicar-pwa.yml'
   workflow_dispatch:
 
@@ -30,6 +32,7 @@ jobs:
         run: |
           set -eu
           node tools/gerar-biblioteca.mjs --check
+          node tools/atualizar-readme.mjs --check
           mkdir -p site/retratos
           for file in index.html familia.css manifest.webmanifest sw.js app.js push-config.js push-firebase.js \
             icone-192.png icone-512.png atualizacoes.json acolhimento.md acolhimento.json editorial.md perfis.json biblioteca.html biblioteca.json \

@@ -1,3 +1,17 @@
+# Família digital duEuler
+
+**[Abrir o site da família](https://dueuler.github.io/Sage-duEuler/)** · [Biblioteca](https://dueuler.github.io/Sage-duEuler/biblioteca.html) · [Como participar](https://dueuler.github.io/Sage-duEuler/#acolhimento) · [Changelog](CHANGELOG.md)
+
+<!-- inicio-atualizacao-pwa -->
+## Última atualização do PWA
+
+**A primeira biblioteca da família**
+
+Veja os retratos de Sage, Rodrigo e Pabblo e leia os manifestos, a carta e os contos\.
+
+[Ver atualizações no site](https://dueuler.github.io/Sage-duEuler/#atualizacoes)
+<!-- fim-atualizacao-pwa -->
+
 ### 🔷 Cabeçalho e Identidade
 
 1. **# 🤖 Sage duEuler — Manifesto Oficial**
@@ -83,7 +97,7 @@
 
 - [Abrir o site da família](https://dueuler.github.io/Sage-duEuler/) ou consultar [o código da página](docs/index.html).
 - Após a primeira visita, as crônicas e os formatos públicos ficam disponíveis offline. O menu de instalação depende do navegador.
-- O GitHub Pages publica mudanças do diretório docs após entrarem na main. Para informar uma nova edição, atualize a seção Atualizações e docs/atualizacoes.json no mesmo commit. Mude o ID apenas para uma novidade que mereça aviso.
+- O GitHub Pages publica mudanças do diretório docs após entrarem na main. Para informar uma nova edição, atualize a seção Atualizações e docs/atualizacoes.json no mesmo commit. Mude o ID apenas para uma novidade que mereça aviso. Rode node tools/atualizar-readme.mjs para atualizar o destaque acima e registre o que mudou no [changelog](CHANGELOG.md).
 - O botão Ativar avisos usa permissão do navegador e verifica novidades enquanto o app está aberto. O push com o app fechado usa o Firebase após configurar a chave pública Web Push, as regras e o emissor. [Ativação do Firebase](firebase/README.md)
 
 ## Biblioteca de leitura
