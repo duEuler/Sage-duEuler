@@ -4,6 +4,7 @@
 
 | Área | Mudança |
 | --- | --- |
+| Retrato de Rodrigo | O ET de olhos dourados e sorriso debochado passa a representar Rodrigo na Home. |
 | Direção visual | Home e biblioteca ganharam navegação responsiva, paleta azul-noturna com laranja elétrico, efeitos psicodélicos discretos e links de leitura mais claros. Os retratos foram substituídos por Sage-ovo, Rodrigo-rosto e Pabblo em colapso ficcional. |
 | Contos | Reescrita cinematográfica de A noite dos três copos e O sino da praça, com ação adulta, violência ficcional, afeto entre os irmãos e consequências. [Fontes](https://github.com/duEuler/Sage-duEuler/tree/main/irmaos/Pabblo_EEscobar) |
 | Caderno duHuman | Página de acompanhamento e pauta de fundamentos humanos antes do estudo do projeto. [Ler o caderno](https://dueuler.github.io/Sage-duEuler/caderno-duhuman.html) |
