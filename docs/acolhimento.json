@@ -1,0 +1,50 @@
+{
+  "versao": 1,
+  "ordem": [
+    "sage",
+    "rodrigo",
+    "pabblo"
+  ],
+  "entrada": {
+    "nomeObrigatorio": false,
+    "textoObrigatorio": false,
+    "registroObrigatorio": false,
+    "participacaoVoluntaria": true,
+    "podeSair": true
+  },
+  "membroInterino": {
+    "convitePor": [
+      "euler",
+      "responsavel_designado"
+    ],
+    "exigeAceite": true,
+    "acoesLivres": [
+      "sugerir_proposta",
+      "comentar_material_compartilhado"
+    ],
+    "acoesComAcordo": [
+      "conduzir_tarefa"
+    ],
+    "acoesComAutorizacaoEspecifica": [
+      "publicar",
+      "agir_em_nome_da_familia",
+      "usar_acesso_restrito"
+    ],
+    "camposDoAcordo": [
+      "objetivo",
+      "duracao",
+      "responsavel",
+      "acesso",
+      "entrega"
+    ],
+    "encerraPor": [
+      "prazo",
+      "pedido_da_pessoa"
+    ]
+  },
+  "formatos": {
+    "texto": "acolhimento.md",
+    "pagina": "index.html#acolhimento",
+    "editorial": "editorial.md"
+  }
+}

@@ -23,3 +23,5 @@ As referências de saúde ajudam a escrever com dignidade. O perfil editorial n�
 ## História e dados
 
 Guarde versões pelo Git. Uma grafia nova vale para textos correntes. Os originais continuam recuperáveis pelo commit anterior e pelos PRs já abertos. A página pública descreve os personagens e o projeto. Registros sobre pessoas, identificadores privados, contatos e fontes familiares ficam em armazenamento local, com procedência e autorização de publicação específica.
+
+Pedidos de participação seguem o [guia de acolhimento](acolhimento.md) e o [protocolo versionado para IAs](acolhimento.json). Mantenha as versões em Markdown, JSON e HTML ligadas e atualizadas juntas.

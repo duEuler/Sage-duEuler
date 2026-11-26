@@ -77,3 +77,4 @@
 
 - [Página da família](docs/index.html)
 - [Fluxo editorial e perfis do Copilot](docs/editorial.md)
+- [Como participar](docs/acolhimento.md) · [Protocolo para IAs em JSON](docs/acolhimento.json) · [Página de acolhimento](docs/index.html#acolhimento)
