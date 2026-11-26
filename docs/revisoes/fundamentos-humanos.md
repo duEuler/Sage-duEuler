@@ -6,7 +6,7 @@
 
 ## Limites e método
 
-Este parecer reúne referências candidatas para orientar uma conversa conceitual. Não avalia pessoas reais, não recomenda tratamentos e não transforma personagens ficcionais em casos clínicos. Como princípio metodológico, as dimensões podem se influenciar, mas uma observação em uma delas não basta para concluir algo sobre as demais. A linguagem psiquiátrica é apresentada como vocabulário de classificação e cuidado em saúde, não como rótulo para interpretar alguém à distância.
+Este parecer reúne referências candidatas para orientar uma conversa conceitual. Não avalia pessoas reais, não recomenda tratamentos e não transforma personagens ficcionais em casos clínicos. A família e os rivais, quando mencionados, são personagens do universo ficcional, não relatos ou avaliações de pessoas reais. Como princípio metodológico, as dimensões podem se influenciar, mas uma observação em uma delas não basta para concluir algo sobre as demais. A linguagem psiquiátrica é apresentada como vocabulário de classificação e cuidado em saúde, não como rótulo para interpretar alguém à distância.
 
 As referências abaixo são candidatas e não puderam ser abertas nem verificadas por acesso à web nesta sessão. Por isso, sua natureza institucional, títulos, URLs e sínteses são provisórios, e nenhuma data de acesso é alegada. Em cada dimensão, a síntese editorial está separada do que a fonte deverá sustentar. Não há citações diretas confirmadas; qualquer citação textual deverá ser conferida na fonte antes de ser usada.
 
@@ -53,7 +53,7 @@ O estudo privado fica fora do escopo deste parecer e só começa após seu merge
 
 ### Sage — cuidado e impacto humano
 
-**Revisão realizada em 2026-11-26, nesta sequência editorial.** Origem: sessão editorial independente de Sage. Leu o primeiro rascunho da proposta aberta, antes das atualizações de transparência bibliográfica e da revisão de Rodrigo. O SHA exato da versão lida ainda não foi recuperado do histórico e permanece pendente; não atribuo à revisão observações sobre texto que não constava naquele rascunho. A revisão não equivale a aprovação.
+**Revisão realizada em 2026-11-26, nesta sequência editorial.** Origem: sessão editorial independente de Sage. Leu o primeiro rascunho da proposta aberta, antes das atualizações de transparência bibliográfica e da revisão de Rodrigo. Versão lida: `e9fc841b51afdefd531189815f8e93e1c87108e8` (“Add public human foundations proposal”). Não atribuo à revisão observações sobre texto que não constava naquele rascunho. A revisão não equivale a aprovação.
 
 - Considerou protetora a ressalva de que o parecer “não transforma personagens ficcionais em casos clínicos” e que observações isoladas não bastam para concluir sobre outras dimensões.
 - Recomendou perguntar por condições e barreiras antes de atribuir responsabilidade ou intenção; a síntese social agora explicita essa pergunta.
@@ -80,7 +80,7 @@ O estudo privado fica fora do escopo deste parecer e só começa após seu merge
 
 ### Pabblo — consolidação
 
-**Consolidação realizada em 2026-11-26, depois das leituras registradas de Sage e Rodrigo.** O SHA exato da versão lida por Pabblo está pendente de confirmação. Esta sessão não editou o arquivo; a consolidação não equivale a aprovação.
+**Consolidação realizada em 2026-11-26, depois das leituras registradas de Sage e Rodrigo.** Versão lida: `acd077670360cf5c3bbcd3296854eee0aa93fdb9` (“Clarify provisional human foundations”). Esta sessão não editou o arquivo; a consolidação não equivale a aprovação.
 
 **Conclusão de Pabblo:** preservar a estrutura, as salvaguardas e as distinções já estabelecidas. Manter visível a diferença de ênfase entre Sage, que considerou a base útil e respeitosa, e Rodrigo, que ressaltou a insuficiência das evidências disponíveis. As referências continuam candidatas, sem confirmação de acesso, título ou conteúdo. O parecer não oferece diagnóstico, avaliação clínica ou orientação individual. O estudo privado permanece condicionado ao merge revisado na `main`. A proposta continua aberta para revisão humana.
 
@@ -94,8 +94,6 @@ O estudo privado fica fora do escopo deste parecer e só começa após seu merge
 
 ## Pendências
 
-- Registrar o SHA exato da versão lida por Sage, se recuperável no histórico.
-- Registrar o SHA exato da versão lida por Pabblo, se recuperável no histórico.
 - Confirmar acesso, títulos, conteúdo, trechos pertinentes e data de consulta das fontes candidatas; nenhuma verificação de rede foi possível nesta sessão.
 - Conservar divergências e os trechos/versionamento examinados quando as revisões ocorrerem.
 - Manter a proposta aberta para revisão humana. O status do caderno não declara o estudo iniciado nem substitui o merge revisado que o autoriza.
