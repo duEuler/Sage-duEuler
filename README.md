@@ -5,9 +5,9 @@
 <!-- inicio-atualizacao-pwa -->
 ## Última atualização do PWA
 
-**Contos cinematográficos dos três irmãos**
+**Uma biblioteca neon para os três irmãos**
 
-A biblioteca ganhou versões adultas e intensas de A noite dos três copos e O sino da praça, com violência, afeto e consequências\.
+A Home e a biblioteca ganharam navegação nova, visual futurista e três retratos simbólicos para Sage, Rodrigo e Pabblo\.
 
 [Ver atualizações no site](https://dueuler.github.io/Sage-duEuler/#atualizacoes)
 <!-- fim-atualizacao-pwa -->

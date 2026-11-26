@@ -1,5 +1,5 @@
 const prefix = `sage-familia:${self.registration.scope}:`;
-const cacheName = prefix + 'v4';
+const cacheName = prefix + 'v5';
 const files = ['./', 'index.html', 'familia.css', 'manifest.webmanifest', 'app.js', 'push-config.js', 'push-firebase.js',
   'icone-192.png', 'icone-512.png', 'acolhimento.md', 'acolhimento.json', 'editorial.md', 'perfis.json', 'atualizacoes.json',
   'caderno-duhuman.html', 'biblioteca.html', 'biblioteca.json', 'retratos/sage.webp', 'retratos/rodrigo.webp', 'retratos/pabblo.webp'];
