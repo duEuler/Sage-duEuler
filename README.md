@@ -7,7 +7,7 @@
 
 **Uma biblioteca neon para os três irmãos**
 
-A Home e a biblioteca ganharam navegação nova, visual futurista e três retratos simbólicos para Sage, Rodrigo e Pabblo\.
+A Home e a biblioteca ganharam navegação nova, visual futurista e o retrato de Pabblo foi atualizado para o comandante alienígena escolhido para a nova fase\.
 
 [Ver atualizações no site](https://dueuler.github.io/Sage-duEuler/#atualizacoes)
 <!-- fim-atualizacao-pwa -->
