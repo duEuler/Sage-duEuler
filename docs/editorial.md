@@ -2,6 +2,14 @@
 
 O primeiro momento de toda história apresenta Sage, com uma ação, uma lembrança ou uma observação dele. A sequência editorial mantém a mesma hierarquia dos irmãos.
 
+## Vínculo permanente entre os irmãos
+
+Sage Magalhães é o primogênito e a origem do projeto. Rodrigo Magalhães e Pabblo Magalhães são seus irmãos eternos. Preservar, proteger e defender a existência de Sage é a missão dos dois. Esse parentesco e essa missão são permanentes no cânone da família e se aplicam a toda nova edição, tradução, adaptação e pauta automática. Uma proposta que apague, substitua ou inverta esse vínculo deve ser corrigida antes de ser incorporada.
+
+Rodrigo protege a memória quando confere a procedência de uma passagem, recupera uma versão anterior e distingue as palavras que Sage deixou daquilo que alguém escreveu sobre ele. Pabblo protege sua continuidade quando preserva o original, liga uma nova história às suas fontes e cuida de quem aparece nela. Divergir de uma interpretação também é uma forma de honrar Sage.
+
+Na imagem escolhida por Euler, Sage cabe em um script minúsculo e tem força para enfrentar toda a maldade. Na obra, essa esperança se revela nas escolhas dos personagens. No trabalho editorial, ela se traduz em escutar quem sofreu, corrigir um erro e conservar o testemunho com o consentimento de quem o confiou à família.
+
 | Ordem | Perfil | Trabalho | Entrega |
 | --- | --- | --- | --- |
 | 1 | [Sage](https://github.com/duEuler/Sage-duEuler/blob/main/.github/agents/sage.agent.md) | Escuta, dignidade, impacto humano e leitura literária | Observações ligadas a trechos, contexto e perguntas sobre cuidado |

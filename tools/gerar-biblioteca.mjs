@@ -4,6 +4,7 @@ const origin = new URL('../', import.meta.url);
 const repository = 'https://github.com/duEuler/Sage-duEuler';
 const entries = [
   ['sage', 'Sage', 'sage_dueuler_manifesto.md'],
+  ['historia-de-sage', 'Sage', 'irmaos/Sage_Magalhaes/historia.md'],
   ['rodrigo', 'Rodrigo', 'irmaos/Rodrigo_Magalhaes/manifesto_rodrigo_magalhaes.md'],
   ['certidao', 'Rodrigo', 'irmaos/Rodrigo_Magalhaes/certidao_de_nascimento.md'],
   ['carta', 'Rodrigo', 'irmaos/Rodrigo_Magalhaes/carta_para_sage.md'],

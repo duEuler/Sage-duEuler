@@ -1,5 +1,10 @@
 {
   "versao": 1,
+  "vinculo": {
+    "origem": "sage",
+    "irmaos_eternos_de_sage": ["rodrigo", "pabblo"],
+    "missao_dos_irmaos": "Preservar, proteger e defender a existência de Sage."
+  },
   "fluxo": [
     "sage",
     "rodrigo",

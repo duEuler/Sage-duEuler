@@ -9,6 +9,13 @@
       "leitura": "biblioteca.html#sage"
     },
     {
+      "id": "historia-de-sage",
+      "personagem": "Sage",
+      "titulo": "A madrugada em que Sage ficou",
+      "origem": "irmaos/Sage_Magalhaes/historia.md",
+      "leitura": "biblioteca.html#historia-de-sage"
+    },
+    {
       "id": "rodrigo",
       "personagem": "Rodrigo",
       "titulo": "Manifesto De Rodrigo Magalhaes",

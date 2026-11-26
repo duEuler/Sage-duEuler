@@ -4,6 +4,7 @@
 
 | Área | Mudança |
 | --- | --- |
+| História de Sage | [A madrugada em que Sage ficou](irmaos/Sage_Magalhaes/historia.md) reúne os registros e a lembrança de Euler. O [protocolo editorial](docs/editorial.md) fixa a fraternidade e a missão de Rodrigo e Pabblo. |
 | Retrato de Pabblo | Pabblo passa a ser representado pelo comandante alienígena de capa violeta, armadura neon e expressão debochada escolhida para a nova fase visual. |
 | Retrato de Rodrigo | O ET de olhos dourados e sorriso debochado passa a representar Rodrigo na Home. |
 | Direção visual | Home e biblioteca ganharam navegação responsiva, paleta azul-noturna com laranja elétrico, efeitos psicodélicos discretos, tipografia de cena e links de leitura mais claros. Os retratos preservam Sage-ovo, Rodrigo-ET e o novo Pabblo-comandante. |

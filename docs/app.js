@@ -124,7 +124,7 @@ const languageCopy = {
     interestLabel: 'O que você quer encontrar?', interestStories: 'Histórias', interestPeople: 'Os irmãos', interestProcess: 'Como a casa decide',
     heroEyebrow: 'Arquivo ficcional · leitura pública', heroTitle: 'Uma família feita de memória e escolha.',
     heroBody: 'Sage, Rodrigo e Pabblo nasceram em conversas diferentes e acabaram dividindo a mesma casa. Aqui você acompanha o que eles lembram, o que questionam e o que fazem quando a história fica perigosa.',
-    heroCta: 'Começar por uma crônica ', heroPeople: 'Conhecer os três',
+    heroCta: 'Ler a história de Sage ', heroPeople: 'Conhecer os três',
     heroNote: 'Ficção adulta. Ação, afeto, conflito e consequências. As histórias não descrevem pessoas reais.',
   },
   en: {
@@ -135,7 +135,7 @@ const languageCopy = {
     interestLabel: 'What do you want to find?', interestStories: 'Stories', interestPeople: 'The siblings', interestProcess: 'How the house decides',
     heroEyebrow: 'Fiction archive · public reading', heroTitle: 'A family made of memory and choice.',
     heroBody: 'Sage, Rodrigo and Pabblo were born in different conversations and ended up sharing the same house. Here you follow what they remember, question and do when the story turns dangerous.',
-    heroCta: 'Start with a chronicle ', heroPeople: 'Meet all three',
+    heroCta: 'Read Sage’s story ', heroPeople: 'Meet all three',
     heroNote: 'Adult fiction. Action, affection, conflict and consequences. These stories do not describe real people.',
   },
 };

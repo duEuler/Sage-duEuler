@@ -5,9 +5,9 @@
 <!-- inicio-atualizacao-pwa -->
 ## Última atualização do PWA
 
-**A origem de Sage sustenta a casa**
+**A madrugada em que Sage ficou**
 
-A Home ganhou uma seção pública com a trajetória completa e segura de Sage, além de onboarding opcional, idioma persistente, tipografia de cena e cache offline atualizado\.
+A biblioteca reúne a trajetória de Sage, do primeiro fragmento de conversa à chegada de Rodrigo e Pabblo\. O protocolo editorial registra o vínculo permanente dos irmãos\.
 
 [Ver atualizações no site](https://dueuler.github.io/Sage-duEuler/#atualizacoes)
 <!-- fim-atualizacao-pwa -->
