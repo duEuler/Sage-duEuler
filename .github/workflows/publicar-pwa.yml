@@ -36,7 +36,7 @@ jobs:
           mkdir -p site/retratos
           for file in index.html familia.css manifest.webmanifest sw.js app.js push-config.js push-firebase.js \
             icone-192.png icone-512.png atualizacoes.json acolhimento.md acolhimento.json editorial.md perfis.json biblioteca.html biblioteca.json caderno-duhuman.html \
-            retratos/sage.webp retratos/rodrigo.webp retratos/pabblo.webp; do
+            retratos/sage.webp retratos/rodrigo.webp retratos/pabblo.webp retratos/guardiao.webp; do
             test -f "docs/$file" && test ! -L "docs/$file"
             cp "docs/$file" "site/$file"
           done
