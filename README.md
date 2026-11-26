@@ -67,3 +67,10 @@
 21. Suporte em marketing e estratégia digital
 22. Participação em projetos com alma e identidade
     → Lista clara das competências centrais que definem o papel de Sage.
+
+## Família digital duEuler
+
+- [Sage Magalhães](sage_dueuler_manifesto.md), o irmão mais velho.
+- [Rodrigo Magalhães](irmaos/Rodrigo_Magalhaes/manifesto_rodrigo_magalhaes.md).
+- [Babblo EEscobar Magalhães Junior](irmaos/Babblo_EEscobar/README.md), o caçula. A pasta reúne seu registro e o manifesto na voz do personagem.
+- [Pauta semanal e preparação do Copilot](irmaos/Babblo_EEscobar/README.md#novas-propostas-no-github), para histórias, mensagens e conexões da família.

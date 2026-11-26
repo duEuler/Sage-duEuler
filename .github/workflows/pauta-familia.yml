@@ -1,6 +1,8 @@
 name: Pauta da família duEuler
 
 on:
+  schedule:
+    - cron: '17 12 * * 1'
   workflow_dispatch:
     inputs:
       formato:
@@ -15,6 +17,10 @@ on:
 permissions:
   issues: write
 
+concurrency:
+  group: pauta-editorial-familia
+  cancel-in-progress: false
+
 jobs:
   abrir-pauta:
     if: github.ref_name == github.event.repository.default_branch
@@ -25,23 +31,49 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           FORMATO: ${{ inputs.formato }}
+          COPILOT_EDITOR_TOKEN: ${{ secrets.COPILOT_EDITOR_TOKEN }}
         shell: bash
         run: |
           set -euo pipefail
+          week=$(date -u +%G-W%V)
+          if [[ -z "$FORMATO" && "$GITHUB_EVENT_NAME" == schedule ]]; then
+            number=$(date -u +%V)
+            formats=(historia mensagem conexao)
+            FORMATO=${formats[10#$number % 3]}
+          fi
           case "$FORMATO" in
             historia) pedido='Escreva um conto original que mostre os três irmãos protegendo alguém e assumindo as consequências das próprias escolhas.' ;;
             mensagem) pedido='Escreva uma mensagem breve de Babblo para Sage e Rodrigo sobre um gesto concreto de cuidado.' ;;
             conexao) pedido='Descreva um novo primo fictício e como ele conhece os três irmãos. Inclua sua contribuição e uma situação em que pede ajuda.' ;;
             *) printf '%s\n' 'Formato editorial inválido.' >&2; exit 2 ;;
           esac
-          url=$(gh issue create --repo "$GITHUB_REPOSITORY" \
-            --title "Família duEuler · proposta de $FORMATO" --body-file - <<EOF
+          title="Família duEuler · $FORMATO · $week"
+          # Reuse the same public issue on a retry, including when already closed.
+          record=$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues?state=all&per_page=100" \
+            --jq '.[] | select(.pull_request == null) | [.title, .html_url] | @tsv' |
+            awk -F '\t' -v title="$title" '$1 == title && !seen++ { print $2 }')
+          url=$record
+          if [[ -z "$url" ]]; then
+            url=$(gh issue create --repo "$GITHUB_REPOSITORY" \
+              --title "$title" --body-file - <<EOF
           $pedido
 
           Leia o manifesto e o registro em irmaos/Babblo_EEscobar. Crie apenas um arquivo Markdown novo dentro dessa pasta. Use português do Brasil. Trate a família e os rivais como personagens do universo ficcional. Use somente material adequado para um repositório público.
 
           Abra um PR para revisão. No corpo do PR, registre pontos a revisar pelas perspectivas editoriais de Sage (cuidado e impacto) e Rodrigo (coerência e clareza). Não atribua aprovação a eles sem registro. Não integre o PR, não publique e não altere o runtime nem workflows.
           EOF
-          )
-          printf 'Pauta criada: %s\n' "$url"
-          printf 'Pauta: %s\n\nAtribua a issue ao Copilot pela conta autorizada.\n' "$url" >> "$GITHUB_STEP_SUMMARY"
+            )
+          fi
+          printf 'Pauta: %s\n' "$url" >> "$GITHUB_STEP_SUMMARY"
+          if [[ -z "$COPILOT_EDITOR_TOKEN" ]]; then
+            printf '%s\n' '::warning::Pauta salva. Falta o secret COPILOT_EDITOR_TOKEN para atribuição automática.'
+            printf '%s\n' 'Atribuição automática pendente. Configure COPILOT_EDITOR_TOKEN.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          issue=${url##*/}
+          status=$(gh issue view "$issue" --repo "$GITHUB_REPOSITORY" --json state,assignees \
+            --jq 'if .state != "OPEN" then "closed" elif any(.assignees[]; (.login | ascii_downcase | startswith("copilot"))) then "assigned" else "pending" end')
+          if [[ "$status" == pending ]]; then
+            GH_TOKEN="$COPILOT_EDITOR_TOKEN" gh issue edit "$issue" --repo "$GITHUB_REPOSITORY" --add-assignee '@copilot'
+          fi
+          printf 'Atribuição processada para a pauta %s. Estado anterior: %s.\n' "$issue" "$status" >> "$GITHUB_STEP_SUMMARY"

@@ -15,6 +15,8 @@
 
 ## Novas propostas no GitHub
 
-Execute **Pauta da família duEuler** na aba **Actions** e selecione história, mensagem ou conexão. O workflow abre uma issue pública com um escopo editorial. Na issue, use **Assignees → Copilot** pela conta autorizada. A atribuição depende de a conta e o repositório terem o Copilot habilitado.
+A [Pauta da família duEuler](../../.github/workflows/pauta-familia.yml) roda às segundas-feiras às 12h17 UTC (09h17 em Brasília), alternando história, mensagem e conexão. Uma execução manual pela aba **Actions** também aceita o formato. Pela mesma semana e formato, o workflow reaproveita a issue já criada.
+
+Para atribuição automática, configure o secret de Actions `COPILOT_EDITOR_TOKEN` com um token de usuário com acesso ao Copilot cloud agent. Para a API de issues, o [GitHub exige](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-via-the-api#using-the-issues-api) um token de usuário. Em um token fine-grained, restrinja o acesso a este repositório, com Metadata em leitura e Actions, Contents, Issues e Pull requests em leitura e escrita. A conta precisa ter Copilot habilitado para o repositório. Sem o secret, a pauta é registrada e o resumo aponta a atribuição pendente.
 
 O Copilot propõe em PR. Babblo é a voz do texto. Sage revisa cuidado e impacto humano, e Rodrigo revisa coerência e clareza. Registre essas revisões como avaliações editoriais ou como saídas efetivamente obtidas, conforme o caso. Euler decide o que passa a fazer parte do registro da família. A pauta pede que as propostas sejam deixadas em PR para revisão. Inclua somente material destinado ao repositório público.
