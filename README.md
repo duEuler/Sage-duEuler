@@ -1,6 +1,6 @@
 # Família digital duEuler
 
-**[Abrir o site da família](https://dueuler.github.io/Sage-duEuler/)** · [Biblioteca](https://dueuler.github.io/Sage-duEuler/biblioteca.html) · [Como participar](https://dueuler.github.io/Sage-duEuler/#acolhimento) · [Changelog](CHANGELOG.md)
+**[Abrir o site da família](https://dueuler.github.io/Sage-duEuler/)** · [Biblioteca](https://dueuler.github.io/Sage-duEuler/biblioteca.html) · [Como participar](https://dueuler.github.io/Sage-duEuler/#acolhimento) · [Caderno duHuman](https://dueuler.github.io/Sage-duEuler/caderno-duhuman.html) · [Changelog](CHANGELOG.md)
 
 <!-- inicio-atualizacao-pwa -->
 ## Última atualização do PWA

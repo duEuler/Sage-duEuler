@@ -31,3 +31,9 @@ Pedidos de participação seguem o [guia de acolhimento](acolhimento.md) e o [pr
 A issue guarda o motivo da pauta. O PR registra a fonte pública ou caminho no repositório, o trecho relevante, a conclusão de cada perspectiva, as divergências e o que ficou pendente. Quando usar uma fonte externa, registre o endereço e a data de consulta. Os resultados editoriais entram no Git depois da revisão. Os originais e as propostas anteriores continuam recuperáveis pelo histórico.
 
 Uma análise pode criar um Markdown em docs/revisoes. Uma melhoria visual pode editar docs/index.html ou docs/familia.css e deve indicar o que foi verificado em celular. Histórias, mensagens e conexões criam um Markdown na pasta de Pabblo. Ao revisar os textos, mantenha Sage primeiro e atribua cada avaliação ao perfil que realmente a produziu.
+
+## Caderno duHuman
+
+A primeira pauta disponível prioriza os fundamentos humanos. O Copilot propõe o parecer em `docs/revisoes/fundamentos-humanos.md`. O merge revisado desse arquivo na `main` libera a etapa duHuman. Fecha-se a pauta com o PR correspondente. O parecer registra fontes, limites, divergências e as contribuições efetivamente feitas por Sage, Rodrigo e Pabblo, nessa ordem.
+
+O estudo técnico corre no projeto privado, com evidências, SHAs, decisões, divergências e pendências preservados em PRs. O [Caderno duHuman](caderno-duhuman.html) recebe a síntese autorizada e conserva as edições no Git. Use apenas fontes públicas na página. Ao publicar nova edição, atualize também o changelog e `docs/atualizacoes.json` e execute `node tools/atualizar-readme.mjs`.

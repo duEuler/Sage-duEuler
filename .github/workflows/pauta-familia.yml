@@ -14,10 +14,12 @@ on:
           - mensagem
           - conexao
           - analise
+          - fundamentos
           - pagina
 
 permissions:
   actions: read
+  contents: read
   issues: write
 
 concurrency:
@@ -30,6 +32,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
       - name: Abrir issue editorial
         env:
           GH_TOKEN: ${{ github.token }}
@@ -43,7 +48,7 @@ jobs:
           formats=(historia mensagem conexao analise pagina)
           inventory=$(gh api --paginate --slurp "repos/$GITHUB_REPOSITORY/issues?state=all&sort=created&direction=desc&per_page=100" |
             jq -c '[.[][] | select(.pull_request == null and .user.login == "github-actions[bot]" and
-              (.title | test("^Família duEuler · (historia|mensagem|conexao|analise|pagina) · [0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}Z$")))
+              (.title | test("^Família duEuler · (historia|mensagem|conexao|analise|pagina|fundamentos) · [0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}Z$")))
               | {title, state, html_url}]')
           url=$(jq -r --arg slot "$slot" 'first(.[] | select(.title | endswith(" · "+$slot))).html_url // ""' <<< "$inventory")
           if [[ -z "$url" ]]; then
@@ -51,6 +56,9 @@ jobs:
             if [[ -n "$active" ]]; then
               printf 'Pauta em andamento: %s. Nenhuma pauta nova nesta hora.\n' "$active" >> "$GITHUB_STEP_SUMMARY"
               exit 0
+            fi
+            if [[ -z "$FORMATO" && ! -s docs/revisoes/fundamentos-humanos.md ]]; then
+              FORMATO=fundamentos
             fi
             if [[ -z "$FORMATO" ]]; then
               last=$(jq -r '.[0].title // "" | split(" · ") | .[1] // ""' <<< "$inventory")
@@ -66,6 +74,7 @@ jobs:
               historia) pedido='Escreva um conto original que mostre os três irmãos protegendo alguém e assumindo as consequências das próprias escolhas. Crie um Markdown novo em irmaos/Pabblo_EEscobar.' ;;
               mensagem) pedido='Escreva uma mensagem breve de Pabblo para Sage e Rodrigo sobre um gesto concreto de cuidado. Crie um Markdown novo em irmaos/Pabblo_EEscobar.' ;;
               conexao) pedido='Descreva um primo ficcional e como ele conhece os três irmãos. Inclua uma contribuição e uma situação em que pede ajuda. Crie um Markdown novo em irmaos/Pabblo_EEscobar.' ;;
+              fundamentos) pedido='Prepare o parecer dos fundamentos humanos em docs/revisoes/fundamentos-humanos.md. Cubra dimensões sociais, fisiológicas, psicológicas e psiquiátricas com fontes públicas, sem diagnóstico nem orientação clínica individual. Siga Sage, Rodrigo e Pabblo. Registre observações, discordâncias, decisões, evidências e pendências, e identifique revisões que ainda não aconteceram. Atualize o status da primeira etapa em docs/caderno-duhuman.html no mesmo PR. O merge revisado do parecer é o sinal de início do estudo privado.' ;;
               analise) pedido='Analise uma história pública ou a página pela ordem Sage, Rodrigo e Pabblo. Registre trechos, fontes, divergências e uma melhoria verificável em um Markdown novo em docs/revisoes.' ;;
               pagina) pedido='Proponha uma pequena melhoria editorial ou de acessibilidade na página da família. Pode editar docs/index.html ou docs/familia.css. Valide leitura em largura de celular e indique as limitações da prova.' ;;
               *) printf '%s\n' 'Formato editorial inválido.' >&2; exit 2 ;;
