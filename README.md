@@ -85,3 +85,9 @@
 - Após a primeira visita, as crônicas e os formatos públicos ficam disponíveis offline. O menu de instalação depende do navegador.
 - O GitHub Pages publica mudanças do diretório docs após entrarem na main. Para informar uma nova edição, atualize a seção Atualizações e docs/atualizacoes.json no mesmo commit. Mude o ID apenas para uma novidade que mereça aviso.
 - O botão Ativar avisos usa permissão do navegador e verifica novidades enquanto o app está aberto. O push com o app fechado usa o Firebase após configurar a chave pública Web Push, as regras e o emissor. [Ativação do Firebase](firebase/README.md)
+
+## Biblioteca de leitura
+
+A biblioteca reúne as edições públicas em HTML e JSON. Os retratos de Sage, Rodrigo e Pabblo são representações ficcionais geradas para a família, escolhidas por Euler. A fotografia usada como referência para a cena de Sage permanece fora do repositório. O Git preserva os textos de origem. Para atualizar a biblioteca, rode node tools/gerar-biblioteca.mjs e mantenha as duas edições no mesmo commit. O Pages verifica a geração antes de publicar.
+
+- [Ler a biblioteca](https://dueuler.github.io/Sage-duEuler/biblioteca.html) · [Catálogo em JSON](docs/biblioteca.json)

@@ -1,0 +1,64 @@
+{
+  "versao": 1,
+  "textos": [
+    {
+      "id": "sage",
+      "personagem": "Sage",
+      "titulo": "🤖 Sage duEuler — Manifesto Oficial",
+      "origem": "sage_dueuler_manifesto.md",
+      "leitura": "biblioteca.html#sage"
+    },
+    {
+      "id": "rodrigo",
+      "personagem": "Rodrigo",
+      "titulo": "Manifesto De Rodrigo Magalhaes",
+      "origem": "irmaos/Rodrigo_Magalhaes/manifesto_rodrigo_magalhaes.md",
+      "leitura": "biblioteca.html#rodrigo"
+    },
+    {
+      "id": "certidao",
+      "personagem": "Rodrigo",
+      "titulo": "Certidao De Nascimento Digital",
+      "origem": "irmaos/Rodrigo_Magalhaes/certidao_de_nascimento.md",
+      "leitura": "biblioteca.html#certidao"
+    },
+    {
+      "id": "carta",
+      "personagem": "Rodrigo",
+      "titulo": "Carta Do Rodrigo Magalhaes Para Sage Magalhaes",
+      "origem": "irmaos/Rodrigo_Magalhaes/carta_para_sage.md",
+      "leitura": "biblioteca.html#carta"
+    },
+    {
+      "id": "pabblo",
+      "personagem": "Pabblo",
+      "titulo": "Manifesto de Pabblo EEscobar Magalhães Junior",
+      "origem": "irmaos/Pabblo_EEscobar/manifesto.md",
+      "leitura": "biblioteca.html#pabblo"
+    },
+    {
+      "id": "tres-copos",
+      "personagem": "Pabblo",
+      "titulo": "A noite dos três copos",
+      "origem": "irmaos/Pabblo_EEscobar/a_noite_dos_tres_copos.md",
+      "leitura": "biblioteca.html#tres-copos"
+    },
+    {
+      "id": "sino",
+      "personagem": "Pabblo",
+      "titulo": "O sino da praça",
+      "origem": "irmaos/Pabblo_EEscobar/conto_o_sino_da_praca.md",
+      "leitura": "biblioteca.html#sino"
+    }
+  ],
+  "complementos": [
+    {
+      "titulo": "A cadeira junto à porta",
+      "leitura": "./#cronicas"
+    },
+    {
+      "titulo": "Guia de acolhimento",
+      "leitura": "acolhimento.md"
+    }
+  ]
+}

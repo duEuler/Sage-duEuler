@@ -56,3 +56,20 @@ footer { padding: 1.2rem 0 2rem; border-top: 1px solid var(--line); color: var(-
 
 button.action { color: var(--accent); background: transparent; font: inherit; cursor: pointer; }
 [hidden] { display: none !important; }
+
+.portrait { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: .3rem; }
+.timeline { display: grid; gap: 1.1rem; }
+.timeline li { border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+.timeline li:last-child { border-bottom: 0; }
+.timeline h3 { margin: 0; }
+.library { padding-block: clamp(2rem, 5vw, 4rem); }
+.library nav { padding-bottom: 1.25rem; }
+.library article { padding-block: 2.2rem; border-top: 1px solid var(--line); scroll-margin-top: 1rem; }
+.library article p, .library article li { max-width: 68ch; }
+.library blockquote { margin-inline: 0; padding-left: 1rem; border-left: 2px solid var(--accent); }
+.library pre { max-width: 100%; padding: 1rem; overflow-x: auto; background: var(--panel); }
+.library .nota { font-size: .9rem; }
+.library hr { border: 0; border-bottom: 1px solid var(--line); }
+
+.profile-meta { font-size: .85rem; line-height: 1.45; }
+.profile-meta time { color: var(--accent); }

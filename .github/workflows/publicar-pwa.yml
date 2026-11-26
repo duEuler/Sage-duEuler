@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
+      - 'irmaos/**'
+      - 'sage_dueuler_manifesto.md'
+      - 'tools/gerar-biblioteca.mjs'
       - '.github/workflows/publicar-pwa.yml'
   workflow_dispatch:
 
@@ -26,9 +29,11 @@ jobs:
       - name: Preparar apenas os arquivos públicos
         run: |
           set -eu
-          mkdir site
+          node tools/gerar-biblioteca.mjs --check
+          mkdir -p site/retratos
           for file in index.html familia.css manifest.webmanifest sw.js app.js push-config.js push-firebase.js \
-            icone-192.png icone-512.png atualizacoes.json acolhimento.md acolhimento.json editorial.md perfis.json; do
+            icone-192.png icone-512.png atualizacoes.json acolhimento.md acolhimento.json editorial.md perfis.json biblioteca.html biblioteca.json \
+            retratos/sage.webp retratos/rodrigo.webp retratos/pabblo.webp; do
             test -f "docs/$file" && test ! -L "docs/$file"
             cp "docs/$file" "site/$file"
           done

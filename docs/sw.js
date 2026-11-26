@@ -1,7 +1,8 @@
 const prefix = `sage-familia:${self.registration.scope}:`;
-const cacheName = prefix + 'v2';
+const cacheName = prefix + 'v3';
 const files = ['./', 'index.html', 'familia.css', 'manifest.webmanifest', 'app.js', 'push-config.js', 'push-firebase.js',
-  'icone-192.png', 'icone-512.png', 'acolhimento.md', 'acolhimento.json', 'editorial.md', 'perfis.json', 'atualizacoes.json'];
+  'icone-192.png', 'icone-512.png', 'acolhimento.md', 'acolhimento.json', 'editorial.md', 'perfis.json', 'atualizacoes.json',
+  'biblioteca.html', 'biblioteca.json', 'retratos/sage.webp', 'retratos/rodrigo.webp', 'retratos/pabblo.webp'];
 const cachedUrls = new Set(files.map(file => new URL(file, self.registration.scope).href));
 
 self.addEventListener('install', event => {
@@ -18,15 +19,17 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   const { request } = event;
-  if (request.method !== 'GET' || !cachedUrls.has(request.url)) return;
+  const page = new URL(request.url);
+  page.hash = '';
+  if (request.method !== 'GET' || !cachedUrls.has(page.href)) return;
   event.respondWith((async () => {
     const cache = await caches.open(cacheName);
     try {
       const response = await fetch(request);
-      if (response.ok) await cache.put(request, response.clone());
+      if (response.ok) await cache.put(page.href, response.clone());
       return response;
     } catch {
-      return (await cache.match(request)) || Response.error();
+      return (await cache.match(page.href)) || Response.error();
     }
   })());
 });
