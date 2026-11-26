@@ -1,7 +1,7 @@
 # Parecer dos fundamentos humanos
 
-**Estado:** proposta aberta para revisão. Não é diagnóstico, avaliação clínica nem orientação individual.  
-**Fontes selecionadas:** 2026-11-26; acesso e conteúdo ainda precisam de verificação.  
+**Estado:** proposta aberta para revisão. Não oferece diagnóstico, avaliação clínica, aconselhamento ou orientação individual.  
+**Fontes candidatas selecionadas:** 2026-11-26; acesso e conteúdo ainda precisam de verificação.  
 **Escopo:** fundamentos sociais, fisiológicos, psicológicos e psiquiátricos, tratados como perspectivas relacionadas — não como quatro caixas independentes.
 
 ## Limites e método
@@ -80,7 +80,9 @@ O estudo privado fica fora do escopo deste parecer e só começa após seu merge
 
 ### Pabblo — consolidação
 
-**Pendente.** A consolidação de Pabblo ainda não foi realizada para este parecer. Ela deve ocorrer depois das duas leituras anteriores, preservar divergências e indicar as decisões que continuam abertas.
+**Consolidação realizada em 2026-11-26, depois das leituras registradas de Sage e Rodrigo.** O SHA exato da versão lida por Pabblo está pendente de confirmação. Esta sessão não editou o arquivo; a consolidação não equivale a aprovação.
+
+**Conclusão de Pabblo:** preservar a estrutura, as salvaguardas e as distinções já estabelecidas. Manter visível a diferença de ênfase entre Sage, que considerou a base útil e respeitosa, e Rodrigo, que ressaltou a insuficiência das evidências disponíveis. As referências continuam candidatas, sem confirmação de acesso, título ou conteúdo. O parecer não oferece diagnóstico, avaliação clínica ou orientação individual. O estudo privado permanece condicionado ao merge revisado na `main`. A proposta continua aberta para revisão humana.
 
 ## Referências candidatas, pendentes de confirmação
 
@@ -93,7 +95,7 @@ O estudo privado fica fora do escopo deste parecer e só começa após seu merge
 ## Pendências
 
 - Registrar o SHA exato da versão lida por Sage, se recuperável no histórico.
-- Obter e registrar a consolidação de Pabblo, que permanece pendente.
-- Confirmar acesso, títulos, conteúdo e data de consulta das fontes públicas; nenhuma verificação de rede foi possível nesta sessão.
+- Registrar o SHA exato da versão lida por Pabblo, se recuperável no histórico.
+- Confirmar acesso, títulos, conteúdo, trechos pertinentes e data de consulta das fontes candidatas; nenhuma verificação de rede foi possível nesta sessão.
 - Conservar divergências e os trechos/versionamento examinados quando as revisões ocorrerem.
 - Manter a proposta aberta para revisão humana. O status do caderno não declara o estudo iniciado nem substitui o merge revisado que o autoriza.
