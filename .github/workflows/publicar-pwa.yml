@@ -27,7 +27,7 @@ jobs:
         run: |
           set -eu
           mkdir site
-          for file in index.html familia.css manifest.webmanifest sw.js app.js \
+          for file in index.html familia.css manifest.webmanifest sw.js app.js push-config.js push-firebase.js \
             icone-192.png icone-512.png atualizacoes.json acolhimento.md acolhimento.json editorial.md perfis.json; do
             test -f "docs/$file" && test ! -L "docs/$file"
             cp "docs/$file" "site/$file"
@@ -49,3 +49,27 @@ jobs:
     steps:
       - id: deploy
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+  avisar:
+    needs: publicar
+    if: vars.FIREBASE_PUSH_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - id: firebase
+        uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093 # v3
+        with:
+          project_id: lutandopelahumanidade
+          workload_identity_provider: ${{ vars.FIREBASE_PUSH_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.FIREBASE_PUSH_SERVICE_ACCOUNT }}
+          token_format: access_token
+          create_credentials_file: false
+      - name: Enviar a edição pública aos inscritos
+        env:
+          FIREBASE_PUSH_ACCESS_TOKEN: ${{ steps.firebase.outputs.access_token }}
+        run: node firebase/enviar-push.mjs

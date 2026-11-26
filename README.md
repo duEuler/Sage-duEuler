@@ -84,4 +84,4 @@
 - [Abrir o site da família](https://dueuler.github.io/Sage-duEuler/) ou consultar [o código da página](docs/index.html).
 - Após a primeira visita, as crônicas e os formatos públicos ficam disponíveis offline. O menu de instalação depende do navegador.
 - O GitHub Pages publica mudanças do diretório docs após entrarem na main. Para informar uma nova edição, atualize a seção Atualizações e docs/atualizacoes.json no mesmo commit. Mude o ID apenas para uma novidade que mereça aviso.
-- O botão Ativar avisos usa permissão do navegador e verifica novidades enquanto o app está aberto. Web Push com o app fechado depende de um serviço de inscrições e envio, separado do Pages.
+- O botão Ativar avisos usa permissão do navegador e verifica novidades enquanto o app está aberto. O push com o app fechado usa o Firebase após configurar a chave pública Web Push, as regras e o emissor. [Ativação do Firebase](firebase/README.md)

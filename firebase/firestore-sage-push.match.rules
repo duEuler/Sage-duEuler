@@ -1,0 +1,13 @@
+// Inserir no match /databases/{database}/documents da regra vigente.
+match /sagePushSubscriptions/{uid} {
+  function owner() {
+    return request.auth != null && request.auth.uid == uid;
+  }
+  allow create, update: if owner()
+    && request.resource.data.keys().hasOnly(['token'])
+    && request.resource.data.token is string
+    && request.resource.data.token.size() > 0
+    && request.resource.data.token.size() <= 4096;
+  allow delete: if owner();
+}
+// sagePushCampaigns e sagePushReceipts são de acesso exclusivo do IAM do emissor.

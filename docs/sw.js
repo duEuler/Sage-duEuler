@@ -1,6 +1,6 @@
 const prefix = `sage-familia:${self.registration.scope}:`;
-const cacheName = prefix + 'v1';
-const files = ['./', 'index.html', 'familia.css', 'manifest.webmanifest', 'app.js',
+const cacheName = prefix + 'v2';
+const files = ['./', 'index.html', 'familia.css', 'manifest.webmanifest', 'app.js', 'push-config.js', 'push-firebase.js',
   'icone-192.png', 'icone-512.png', 'acolhimento.md', 'acolhimento.json', 'editorial.md', 'perfis.json', 'atualizacoes.json'];
 const cachedUrls = new Set(files.map(file => new URL(file, self.registration.scope).href));
 
@@ -34,4 +34,16 @@ self.addEventListener('fetch', event => {
 self.addEventListener('notificationclick', event => {
   event.notification.close();
   event.waitUntil(self.clients.openWindow(new URL('./#atualizacoes', self.registration.scope).href));
+});
+
+self.addEventListener('push', event => {
+  let data;
+  try { data = event.data?.json()?.data; } catch { return; }
+  if (data?.tipo !== 'sage-atualizacao' || typeof data.id !== 'string' ||
+      typeof data.titulo !== 'string' || typeof data.resumo !== 'string') return;
+  event.waitUntil(self.registration.showNotification(data.titulo, {
+    body: data.resumo,
+    icon: new URL('icone-192.png', self.registration.scope).href,
+    tag: data.id,
+  }));
 });
