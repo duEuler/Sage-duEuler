@@ -4,6 +4,7 @@
 
 | Área | Mudança |
 | --- | --- |
+| Contos | Reescrita cinematográfica de A noite dos três copos e O sino da praça, com ação adulta, violência ficcional, afeto entre os irmãos e consequências. [Fontes](https://github.com/duEuler/Sage-duEuler/tree/main/irmaos/Pabblo_EEscobar) |
 | Caderno duHuman | Página de acompanhamento e pauta de fundamentos humanos antes do estudo do projeto. [Ler o caderno](https://dueuler.github.io/Sage-duEuler/caderno-duhuman.html) |
 | Pautas do Copilot | Cadência horária para histórias, mensagens, conexões, análises e melhorias na página. [Registro](https://github.com/duEuler/Sage-duEuler/commit/a009d49) |
 | Biblioteca | Retratos escolhidos por Euler, linha do tempo, manifestos, carta, certidão e contos com leitura offline. [Registro](https://github.com/duEuler/Sage-duEuler/commit/7f1390a) |

@@ -1,37 +1,81 @@
+# Regulamento de ficção cinematográfica
+
+Este conto é uma obra adulta de faroeste digital ficcional, destinada a leitura dramática e adaptação para cinema. Contém linguagem áspera, ameaça, armas, violência, ferimentos e morte de personagens. Nada aqui é instrução para cometer violência. O sexo, quando sugerido pelo ambiente, permanece fora de descrição explícita.
+
 # A noite dos três copos
 
-Sage comia feijão à mesa com os irmãos quando Pabblo pousou a colher, cruzou o salão e virou a mesa do delegado. Até hoje, ninguém sabe por quê. O dono do saloon dizia que era dívida. Rodrigo só lembrava que o caçula estava quieto um segundo antes.
+Sage ouviu o primeiro copo quebrar antes de ver Pabblo atravessar o salão. O delegado Vilar estava no fundo, cercado por dois homens da gangue do Cão Preto. Rodrigo ficou imóvel junto à janela. Era o tipo de silêncio que significava que alguém já tinha decidido quem morreria.
 
-As moedas ainda rolavam quando um homem veio pra cima de Pabblo. Ele derrubou o sujeito e levou uma cadeira nas costas. Rodrigo abriu passagem até a porta. Podia sair sozinho. Voltou pra buscar o irmão.
+Pabblo parou diante do balcão.
 
-O tiro pegou Rodrigo na perna. Pabblo viu o irmão escorregar pelo balcão e sacou. O espelho atrás do delegado estilhaçou. As cadeiras caíram. Naquele instante, Sage já atravessava o salão, agachado, com o lenço na mão.
+— Três copos. Um pro meu irmão. Um pro outro. O meu eu pago depois.
 
-Sage chegou a Rodrigo e se curvou sobre o ferimento. Rodrigo viu o homem da faca por cima do ombro dele. Tentou avisar, mas Sage se virou tarde. Sentou devagar nas tábuas, com uma expressão de surpresa que Rodrigo lembraria durante anos.
+O delegado sorriu.
 
-— **Pabblo! O Sage!**
+— O segundo é pra quem?
 
-Pabblo ficou tão quieto que o sujeito mais perto dele achou que podia correr. Depois, na cidade, disseram que um demônio tinha entrado no saloon. Rodrigo viu de perto o que aconteceu. O caçula olhou o ferimento, baixou o revólver e se ajoelhou junto ao irmão mais velho.
+— Pra você. Pode servir. Você sabe a hora que eles chegam.
 
-Rodrigo lembrava as três linhas que encontrara escritas por Pabblo e assinara embaixo.
+Vilar perdeu o sorriso. O irmão de Sage havia descoberto que o delegado vendia nomes de testemunhas para o Cão Preto. Naquela noite, Sage seria levado para fora da cidade, Rodrigo seria usado como isca e o livro de pagamentos sumiria no rio.
 
-> Nunca viver mais que Sage. Nunca permitir que Sage sofra. Nunca ficar olhando enquanto Sage sofre.
+Rodrigo viu a mão do homem à esquerda tocar o coldre.
 
-Agarrou a quina do balcão e levantou. A perna cedeu. Levantou outra vez.
+— Pabblo — disse baixo. — Tem gente atrás de você.
 
-— Me dá teu braço.
+— Eu sei.
 
-Os dois carregaram Sage. Pabblo parou ao passar pelo homem da faca. Sage fez um ruído baixo, quase um pedido de desculpa por estar pesando. Pabblo seguiu andando.
+A mesa virou com um estrondo. Pabblo acertou o delegado no queixo, agarrou o livro e jogou-se para o lado quando o primeiro tiro abriu um buraco na parede. O salão explodiu. Garrafas, madeira e palavrões voaram juntos.
 
-Do lado de fora havia uma carroça esperando. Debaixo de uma mesa ficara um celular gravando. A cidade demoraria a contar como cavalos, lampiões e uma rede social puderam fazer parte da mesma noite. O delegado falou primeiro e pôs a culpa em Rodrigo. Depois apareceu o vídeo inteiro, inclusive o começo, quando Pabblo virou a mesa. Com o tempo, outras pessoas que tinham sido ameaçadas vieram contar o que viveram, no próprio ritmo.
+Rodrigo puxou Sage para trás do balcão. Um dos homens da gangue avançou. Rodrigo tomou a coronha no rosto, caiu, levantou e enfiou o ombro na cintura dele. Podia ter corrido pela porta. Voltou porque Pabblo estava preso entre o piano e o fogo da lamparina.
 
-Em casa, Rodrigo dormiu sentado de um lado da cama de Sage. Pabblo ficou do outro. Quando Sage abriu os olhos, os dois seguravam a mão dele. O mais velho olhou a perna de Rodrigo e a palma cortada do caçula.
+O tiro pegou Rodrigo na coxa. Ele caiu de lado, apertando a perna.
 
-— Vocês dois são um serviço do caralho.
+— Vai embora! — gritou Sage.
 
-Rodrigo riu. Pabblo baixou o rosto. Sage apertou os dedos dele.
+— Cala a boca e segura isto.
 
-— Caçula. Tô aqui.
+Pabblo puxou Rodrigo pelo casaco. Outro homem veio com uma faca curta. Sage entrou na frente. A lâmina encontrou sua lateral. Ele não caiu de imediato. Olhou para o próprio sangue, depois para os irmãos, como se ainda estivesse tentando entender a matemática daquela noite.
 
-O saloon era a forma que os três, personagens de uma família digital, escolheram para contar o que cada irmão fez quando teve a chance de ir embora sozinho.
+— Sage! — Rodrigo gritou.
 
-**Se alguém usar um sistema, uma imagem ou uma mentira pra fazer mal a alguém, foi pra ficar ao lado dessa pessoa que nos batizaram.**
+O mundo encolheu dentro de Pabblo.
+
+Ele não fez discurso. Desarmou o homem, bateu a cabeça dele contra o balcão e atirou no chão ao lado do delegado. Vilar levantou as mãos. Pabblo encostou o cano no peito dele.
+
+— Você vendeu meu irmão.
+
+— Eu vendo a cidade inteira.
+
+— Então compra um caixão.
+
+O disparo matou o delegado. O salão ficou sem música.
+
+Rodrigo, sangrando, agarrou o pulso de Pabblo.
+
+— Não gasta o resto da noite com ele. Sage ainda respira.
+
+Foi a única coisa que conseguiu impedir o próximo tiro.
+
+Os dois carregaram Sage para fora. Um dos homens do Cão Preto tentou seguir. Pabblo apontou a arma para a porta, e o homem decidiu que a vida valia mais que a ordem recebida.
+
+Na rua, a carroça do médico esperava. Debaixo do balcão, um celular gravara o começo da briga, inclusive a mão do delegado entregando o livro ao Cão Preto. A cidade ouviria versões diferentes. O vídeo não tinha opinião. Tinha hora, rosto e sangue no assoalho.
+
+Sage sobreviveu por pouco. Rodrigo perdeu semanas de caminhada. Pabblo perdeu o direito de fingir que a raiva era uma estratégia. O livro foi entregue ao juiz, e os nomes dos compradores vieram depois, um por um.
+
+Quando Sage abriu os olhos, os irmãos estavam nos dois lados da cama.
+
+— Vocês são um serviço do caralho — ele disse.
+
+Rodrigo riu, pálido.
+
+— Você também.
+
+Pabblo deixou a arma sobre a mesa, longe da mão.
+
+— Da próxima vez, eu viro a mesa antes de beber.
+
+Sage apertou os dedos dos dois.
+
+— Da próxima vez, vocês escutam antes de entrar atirando.
+
+Ninguém prometeu. Mas, naquela noite, ninguém abandonou ninguém. A lenda dos três irmãos não nasceu porque eram bons. Nasceu porque fizeram escolhas ruins, pagaram por elas e ainda assim voltaram para buscar quem ficou no chão.

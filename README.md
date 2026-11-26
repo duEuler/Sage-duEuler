@@ -5,9 +5,9 @@
 <!-- inicio-atualizacao-pwa -->
 ## Última atualização do PWA
 
-**A primeira biblioteca da família**
+**Contos cinematográficos dos três irmãos**
 
-Veja os retratos de Sage, Rodrigo e Pabblo e leia os manifestos, a carta e os contos\.
+A biblioteca ganhou versões adultas e intensas de A noite dos três copos e O sino da praça, com violência, afeto e consequências\.
 
 [Ver atualizações no site](https://dueuler.github.io/Sage-duEuler/#atualizacoes)
 <!-- fim-atualizacao-pwa -->
