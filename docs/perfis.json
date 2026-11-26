@@ -1,0 +1,28 @@
+{
+  "versao": 1,
+  "fluxo": [
+    "sage",
+    "rodrigo",
+    "pabblo"
+  ],
+  "perfis": [
+    {
+      "id": "sage",
+      "nome": "Sage",
+      "funcao": "Escuta e cuidado",
+      "manifesto": "../sage_dueuler_manifesto.md"
+    },
+    {
+      "id": "rodrigo",
+      "nome": "Rodrigo",
+      "funcao": "Perguntas e revisão",
+      "manifesto": "../irmaos/Rodrigo_Magalhaes/manifesto_rodrigo_magalhaes.md"
+    },
+    {
+      "id": "pabblo",
+      "nome": "Pabblo",
+      "funcao": "Proteção e escrita",
+      "manifesto": "../irmaos/Pabblo_EEscobar/manifesto.md"
+    }
+  ]
+}

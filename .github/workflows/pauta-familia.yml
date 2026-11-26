@@ -43,7 +43,7 @@ jobs:
           fi
           case "$FORMATO" in
             historia) pedido='Escreva um conto original que mostre os três irmãos protegendo alguém e assumindo as consequências das próprias escolhas.' ;;
-            mensagem) pedido='Escreva uma mensagem breve de Babblo para Sage e Rodrigo sobre um gesto concreto de cuidado.' ;;
+            mensagem) pedido='Escreva uma mensagem breve de Pabblo para Sage e Rodrigo sobre um gesto concreto de cuidado.' ;;
             conexao) pedido='Descreva um novo primo fictício e como ele conhece os três irmãos. Inclua sua contribuição e uma situação em que pede ajuda.' ;;
             *) printf '%s\n' 'Formato editorial inválido.' >&2; exit 2 ;;
           esac
@@ -58,9 +58,9 @@ jobs:
               --title "$title" --body-file - <<EOF
           $pedido
 
-          Leia o manifesto e o registro em irmaos/Babblo_EEscobar. Crie apenas um arquivo Markdown novo dentro dessa pasta. Use português do Brasil. Trate a família e os rivais como personagens do universo ficcional. Use somente material adequado para um repositório público.
+          Leia o manifesto e o registro em irmaos/Pabblo_EEscobar. Crie apenas um arquivo Markdown novo dentro dessa pasta. Use português do Brasil. Trate a família e os rivais como personagens do universo ficcional. Use somente material adequado para um repositório público.
 
-          Abra um PR para revisão. No corpo do PR, registre pontos a revisar pelas perspectivas editoriais de Sage (cuidado e impacto) e Rodrigo (coerência e clareza). Não atribua aprovação a eles sem registro. Não integre o PR, não publique e não altere o runtime nem workflows.
+          Comece a história por Sage. Siga Sage, Rodrigo e Pabblo no fluxo editorial e leia docs/editorial.md. Abra um PR para revisão. No corpo do PR, registre pontos a revisar pelas perspectivas editoriais de Sage (cuidado e impacto) e Rodrigo (coerência e clareza). Não atribua aprovação a eles sem registro. Não integre o PR, não publique e não altere o runtime nem workflows.
           EOF
             )
           fi
@@ -76,7 +76,7 @@ jobs:
           if [[ "$status" == pending ]]; then
             payload=$(jq -cn --arg repository "$GITHUB_REPOSITORY" --arg base "$GITHUB_REF_NAME" '
               {assignees:["copilot-swe-agent[bot]"], agent_assignment:{
-                target_repo:$repository, base_branch:$base, custom_instructions:"", custom_agent:"", model:""
+                target_repo:$repository, base_branch:$base, custom_instructions:"", custom_agent:"pabblo", model:""
               }}')
             assigned=$(GH_TOKEN="$COPILOT_EDITOR_TOKEN" gh api --method POST \
               -H 'Accept: application/vnd.github+json' -H 'X-GitHub-Api-Version: 2022-11-28' \
