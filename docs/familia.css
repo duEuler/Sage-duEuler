@@ -197,8 +197,21 @@ body {
 .onboarding-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; margin-top: 1.6rem; }
 .onboarding-actions .action { margin-top: 0; }
 .text-button { padding: .6rem .5rem; border: 0; color: var(--amber); background: transparent; font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: .25em; }
+.interest-choices { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin-top: 1.35rem; }
+.interest-choices > span { width: 100%; color: var(--dim); font-size: .86rem; }
+.interest-choices button { padding: .5rem .7rem; border: 1px solid #55738d88; border-radius: 999px; color: var(--muted); background: #101a2dcc; font: inherit; cursor: pointer; }
+.interest-choices button[aria-pressed="true"], .interest-choices button:hover { border-color: var(--blue); color: var(--ink); background: #19324dcc; }
+.sage-foundation { background: linear-gradient(110deg, #10264ddd 12%, transparent 78%), url("retratos/sage.webp") 93% 50% / min(32rem, 42vw) auto no-repeat; }
+.sage-story { display: grid; grid-template-columns: 1.25fr .9fr .9fr; gap: 1rem; width: min(100%, 70rem); margin-block: 1.5rem 2rem; }
+.sage-story article { padding: clamp(1.2rem, 2.5vw, 2rem); border: 1px solid #55738d88; border-radius: 1rem; background: #0d1729dd; box-shadow: 0 1rem 2.5rem #03050c55; }
+.sage-story h3 { margin-top: 0; font-size: 1.65rem; }
+.sage-story p, .sage-story li { color: var(--muted); }
+.sage-story blockquote { margin-inline: 0; padding: 1rem 1.1rem; border-left: 2px solid var(--amber); color: var(--ink); background: #1c2038cc; }
+.sage-story ul { padding-left: 1.15rem; }
 @media (max-width: 760px) {
   .language-switcher { margin-left: 0; }
   .onboarding-card { padding: 1.5rem; }
   .onboarding-actions { align-items: flex-start; flex-direction: column; }
+  .sage-foundation { background-size: 15rem auto; background-position: 112% 96%; }
+  .sage-story { grid-template-columns: 1fr; }
 }

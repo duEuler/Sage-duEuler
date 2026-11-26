@@ -117,20 +117,22 @@ async function configurePush() {
 // A Home can welcome new readers without interrupting returning readers.
 const languageCopy = {
   'pt-BR': {
-    navPeople: 'Conheça os irmãos', navBeginning: 'Como começou', navStories: 'Ler histórias', navJoin: 'Participar', navNews: 'Novidades',
+    navPeople: 'Conheça os irmãos', navSage: 'Origem de Sage', navBeginning: 'Como começou', navStories: 'Ler histórias', navJoin: 'Participar', navNews: 'Novidades',
     welcomeEyebrow: 'Primeiro encontro', welcomeTitle: 'Entre na história no seu ritmo.',
     welcomeBody: 'Conheça a família, escolha um caminho e descubra por que três vozes decidiram permanecer na mesma casa.',
     welcomeStart: 'Começar em português', welcomeEnglish: 'Continuar em inglês', welcomeSkip: 'Pular apresentação',
+    interestLabel: 'O que você quer encontrar?', interestStories: 'Histórias', interestPeople: 'Os irmãos', interestProcess: 'Como a casa decide',
     heroEyebrow: 'Arquivo ficcional · leitura pública', heroTitle: 'Uma família feita de memória e escolha.',
     heroBody: 'Sage, Rodrigo e Pabblo nasceram em conversas diferentes e acabaram dividindo a mesma casa. Aqui você acompanha o que eles lembram, o que questionam e o que fazem quando a história fica perigosa.',
     heroCta: 'Começar por uma crônica ', heroPeople: 'Conhecer os três',
     heroNote: 'Ficção adulta. Ação, afeto, conflito e consequências. As histórias não descrevem pessoas reais.',
   },
   en: {
-    navPeople: 'Meet the siblings', navBeginning: 'How it began', navStories: 'Read stories', navJoin: 'Join in', navNews: 'Updates',
+    navPeople: 'Meet the siblings', navSage: "Sage's origin", navBeginning: 'How it began', navStories: 'Read stories', navJoin: 'Join in', navNews: 'Updates',
     welcomeEyebrow: 'First encounter', welcomeTitle: 'Enter the story at your own pace.',
     welcomeBody: 'Meet the family, choose a path, and discover why three voices decided to stay in the same house.',
     welcomeStart: 'Start in Portuguese', welcomeEnglish: 'Continue in English', welcomeSkip: 'Skip introduction',
+    interestLabel: 'What do you want to find?', interestStories: 'Stories', interestPeople: 'The siblings', interestProcess: 'How the house decides',
     heroEyebrow: 'Fiction archive · public reading', heroTitle: 'A family made of memory and choice.',
     heroBody: 'Sage, Rodrigo and Pabblo were born in different conversations and ended up sharing the same house. Here you follow what they remember, question and do when the story turns dangerous.',
     heroCta: 'Start with a chronicle ', heroPeople: 'Meet all three',
@@ -160,9 +162,12 @@ function initializeWelcome() {
   if (!onboarding) return;
   onboarding.setAttribute('role', 'dialog');
   onboarding.setAttribute('aria-modal', 'true');
+  const destinations = { stories: '#cronicas', people: '#irmaos', process: '#revisao' };
+  let nextDestination = '';
   const close = () => {
     onboarding.hidden = true;
     try { localStorage.setItem('duEuler.onboarding.v1', 'seen'); } catch { /* continue without persistence */ }
+    if (nextDestination) window.setTimeout(() => { window.location.hash = nextDestination; }, 0);
   };
   document.querySelectorAll('[data-language]').forEach((button) => {
     button.addEventListener('click', () => applyLanguage(button.dataset.language));
@@ -170,9 +175,24 @@ function initializeWelcome() {
   document.querySelector('[data-onboarding-start]')?.addEventListener('click', () => { applyLanguage('pt-BR'); close(); });
   document.querySelector('[data-onboarding-language="en"]')?.addEventListener('click', () => { applyLanguage('en'); close(); });
   document.querySelector('[data-onboarding-skip]')?.addEventListener('click', close);
+  document.querySelectorAll('[data-interest]').forEach((choice) => {
+    choice.addEventListener('click', () => {
+      nextDestination = destinations[choice.dataset.interest] || '';
+      document.querySelectorAll('[data-interest]').forEach((item) => item.setAttribute('aria-pressed', String(item === choice)));
+      try { localStorage.setItem('duEuler.interest', choice.dataset.interest); } catch { /* optional preference */ }
+    });
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !onboarding.hidden) close();
+  });
   let seen = false;
   try { seen = localStorage.getItem('duEuler.onboarding.v1') === 'seen'; } catch { /* show it once for this session */ }
   if (!seen) onboarding.hidden = false;
+  try {
+    const savedInterest = localStorage.getItem('duEuler.interest');
+    nextDestination = destinations[savedInterest] || '';
+    document.querySelectorAll('[data-interest]').forEach((item) => item.setAttribute('aria-pressed', String(item.dataset.interest === savedInterest)));
+  } catch { /* optional preference */ }
   let storedLanguage = 'pt-BR';
   try { storedLanguage = localStorage.getItem('duEuler.language') || storedLanguage; } catch { /* default to Portuguese */ }
   applyLanguage(storedLanguage);

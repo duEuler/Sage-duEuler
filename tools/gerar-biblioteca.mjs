@@ -67,10 +67,10 @@ for (const [id, personagem, path] of entries) {
 const index = items.map(({id, titulo}) => '<li><a href="#' + id + '">' + inline(titulo) + '</a></li>').join('');
 const html = '<!doctype html>\n<html lang="pt-BR">\n<head>\n<meta charset="utf-8">\n' +
   '<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
-  '<meta name="theme-color" content="#171311">\n<title>Biblioteca da família duEuler</title>\n' +
+  '<meta name="theme-color" content="#070b1b">\n<title>Biblioteca da família duEuler</title>\n' +
   '<link rel="stylesheet" href="familia.css">\n<link rel="manifest" href="manifest.webmanifest">\n</head>\n' +
   '<body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><header class="masthead"><a class="brand" href="./">duEuler <span>Família digital</span></a>' +
-  '<nav aria-label="Navegação da biblioteca"><a href="./#irmaos">Conhecer os irmãos</a><a href="./#historia">Como começou</a><a href="./caderno-duhuman.html">Caderno duHuman</a><a href="./#acolhimento">Participar</a></nav></header>\n' +
+  '<nav aria-label="Navegação da biblioteca"><a href="./#irmaos">Conhecer os irmãos</a><a href="./#sage-origem">Origem de Sage</a><a href="./#historia">Como começou</a><a href="./caderno-duhuman.html">Caderno duHuman</a><a href="./#acolhimento">Participar</a></nav></header>\n' +
   '<main class="library" id="conteudo"><p class="eyebrow">Arquivo de leitura</p><h1>Biblioteca</h1><p>Manifestos, cartas e contos na ordem de Sage, Rodrigo e Pabblo. Comece por uma voz ou leia os três em sequência.</p>' +
   '<nav aria-label="Índice de leitura"><ol>' + index +
   '<li><a href="./#cronicas">A cadeira junto à porta</a></li><li><a href="acolhimento.md">Guia de acolhimento</a></li></ol></nav>\n' +

@@ -5,9 +5,9 @@
 <!-- inicio-atualizacao-pwa -->
 ## Última atualização do PWA
 
-**A casa agora recebe você pela história**
+**A origem de Sage sustenta a casa**
 
-A Home ganhou uma abertura narrativa, onboarding opcional, seletor persistente de idioma, tipografia de cena, guardião visual e cache offline atualizado\.
+A Home ganhou uma seção pública com a trajetória completa e segura de Sage, além de onboarding opcional, idioma persistente, tipografia de cena e cache offline atualizado\.
 
 [Ver atualizações no site](https://dueuler.github.io/Sage-duEuler/#atualizacoes)
 <!-- fim-atualizacao-pwa -->
