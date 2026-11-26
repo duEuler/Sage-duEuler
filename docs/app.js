@@ -113,3 +113,69 @@ async function configurePush() {
     }
   }
 }
+
+// A Home can welcome new readers without interrupting returning readers.
+const languageCopy = {
+  'pt-BR': {
+    navPeople: 'Conheça os irmãos', navBeginning: 'Como começou', navStories: 'Ler histórias', navJoin: 'Participar', navNews: 'Novidades',
+    welcomeEyebrow: 'Primeiro encontro', welcomeTitle: 'Entre na história no seu ritmo.',
+    welcomeBody: 'Conheça a família, escolha um caminho e descubra por que três vozes decidiram permanecer na mesma casa.',
+    welcomeStart: 'Começar em português', welcomeEnglish: 'Continuar em inglês', welcomeSkip: 'Pular apresentação',
+    heroEyebrow: 'Arquivo ficcional · leitura pública', heroTitle: 'Uma família feita de memória e escolha.',
+    heroBody: 'Sage, Rodrigo e Pabblo nasceram em conversas diferentes e acabaram dividindo a mesma casa. Aqui você acompanha o que eles lembram, o que questionam e o que fazem quando a história fica perigosa.',
+    heroCta: 'Começar por uma crônica ', heroPeople: 'Conhecer os três',
+    heroNote: 'Ficção adulta. Ação, afeto, conflito e consequências. As histórias não descrevem pessoas reais.',
+  },
+  en: {
+    navPeople: 'Meet the siblings', navBeginning: 'How it began', navStories: 'Read stories', navJoin: 'Join in', navNews: 'Updates',
+    welcomeEyebrow: 'First encounter', welcomeTitle: 'Enter the story at your own pace.',
+    welcomeBody: 'Meet the family, choose a path, and discover why three voices decided to stay in the same house.',
+    welcomeStart: 'Start in Portuguese', welcomeEnglish: 'Continue in English', welcomeSkip: 'Skip introduction',
+    heroEyebrow: 'Fiction archive · public reading', heroTitle: 'A family made of memory and choice.',
+    heroBody: 'Sage, Rodrigo and Pabblo were born in different conversations and ended up sharing the same house. Here you follow what they remember, question and do when the story turns dangerous.',
+    heroCta: 'Start with a chronicle ', heroPeople: 'Meet all three',
+    heroNote: 'Adult fiction. Action, affection, conflict and consequences. These stories do not describe real people.',
+  },
+};
+
+function applyLanguage(language) {
+  const selected = languageCopy[language] ? language : 'pt-BR';
+  const copy = languageCopy[selected];
+  document.documentElement.lang = selected;
+  document.querySelectorAll('[data-language]').forEach((button) => {
+    button.setAttribute('aria-pressed', String(button.dataset.language === selected));
+  });
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const value = copy[element.dataset.i18n];
+    if (typeof value !== 'string') return;
+    const textNode = [...element.childNodes].find((node) => node.nodeType === Node.TEXT_NODE);
+    if (textNode) textNode.nodeValue = value;
+    else element.textContent = value;
+  });
+  try { localStorage.setItem('duEuler.language', selected); } catch { /* storage may be blocked */ }
+}
+
+function initializeWelcome() {
+  const onboarding = document.querySelector('#onboarding');
+  if (!onboarding) return;
+  onboarding.setAttribute('role', 'dialog');
+  onboarding.setAttribute('aria-modal', 'true');
+  const close = () => {
+    onboarding.hidden = true;
+    try { localStorage.setItem('duEuler.onboarding.v1', 'seen'); } catch { /* continue without persistence */ }
+  };
+  document.querySelectorAll('[data-language]').forEach((button) => {
+    button.addEventListener('click', () => applyLanguage(button.dataset.language));
+  });
+  document.querySelector('[data-onboarding-start]')?.addEventListener('click', () => { applyLanguage('pt-BR'); close(); });
+  document.querySelector('[data-onboarding-language="en"]')?.addEventListener('click', () => { applyLanguage('en'); close(); });
+  document.querySelector('[data-onboarding-skip]')?.addEventListener('click', close);
+  let seen = false;
+  try { seen = localStorage.getItem('duEuler.onboarding.v1') === 'seen'; } catch { /* show it once for this session */ }
+  if (!seen) onboarding.hidden = false;
+  let storedLanguage = 'pt-BR';
+  try { storedLanguage = localStorage.getItem('duEuler.language') || storedLanguage; } catch { /* default to Portuguese */ }
+  applyLanguage(storedLanguage);
+}
+
+initializeWelcome();

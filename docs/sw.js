@@ -1,8 +1,8 @@
 const prefix = `sage-familia:${self.registration.scope}:`;
-const cacheName = prefix + 'v5';
+const cacheName = prefix + 'v6';
 const files = ['./', 'index.html', 'familia.css', 'manifest.webmanifest', 'app.js', 'push-config.js', 'push-firebase.js',
   'icone-192.png', 'icone-512.png', 'acolhimento.md', 'acolhimento.json', 'editorial.md', 'perfis.json', 'atualizacoes.json',
-  'caderno-duhuman.html', 'biblioteca.html', 'biblioteca.json', 'retratos/sage.webp', 'retratos/rodrigo.webp', 'retratos/pabblo.webp'];
+  'caderno-duhuman.html', 'biblioteca.html', 'biblioteca.json', 'retratos/sage.webp', 'retratos/rodrigo.webp', 'retratos/pabblo.webp', 'retratos/guardiao.webp'];
 const cachedUrls = new Set(files.map(file => new URL(file, self.registration.scope).href));
 
 self.addEventListener('install', event => {

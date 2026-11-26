@@ -184,3 +184,21 @@ body {
   .hero, .section { animation: none; }
   .profiles article { transition: none; }
 }
+
+.language-switcher { display: inline-flex; gap: .2rem; margin-left: auto; padding: .2rem; border: 1px solid #55738d88; border-radius: 999px; background: #0b1225cc; }
+.language-switcher button { min-width: 2.3rem; padding: .28rem .45rem; border: 0; border-radius: 999px; color: var(--muted); background: transparent; font: 700 .72rem/1 "Segoe UI", system-ui, sans-serif; cursor: pointer; }
+.language-switcher button[aria-pressed="true"] { color: var(--night-deep); background: var(--amber); }
+.language-switcher button:focus-visible, .text-button:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.onboarding { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; padding: 1.25rem; background: #030714d9; backdrop-filter: blur(14px); }
+.onboarding[hidden] { display: none; }
+.onboarding-card { width: min(100%, 36rem); padding: clamp(1.8rem, 5vw, 3.5rem); border: 1px solid #7ad9eb88; border-radius: 1.25rem; background: radial-gradient(circle at 90% 0, #4b2a7766, transparent 18rem), #0e172beF; box-shadow: 0 2rem 8rem #02040cbb, 0 0 4rem #279dc833; }
+.onboarding-card h2 { margin: 0 0 1rem; font-size: clamp(2.4rem, 7vw, 4.8rem); }
+.onboarding-card > p:not(.eyebrow) { font-size: 1.15rem; }
+.onboarding-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; margin-top: 1.6rem; }
+.onboarding-actions .action { margin-top: 0; }
+.text-button { padding: .6rem .5rem; border: 0; color: var(--amber); background: transparent; font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: .25em; }
+@media (max-width: 760px) {
+  .language-switcher { margin-left: 0; }
+  .onboarding-card { padding: 1.5rem; }
+  .onboarding-actions { align-items: flex-start; flex-direction: column; }
+}

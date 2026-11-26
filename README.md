@@ -5,9 +5,9 @@
 <!-- inicio-atualizacao-pwa -->
 ## Última atualização do PWA
 
-**Uma biblioteca neon para os três irmãos**
+**A casa agora recebe você pela história**
 
-A Home e a biblioteca ganharam navegação nova, visual futurista e o retrato de Pabblo foi atualizado para o comandante alienígena escolhido para a nova fase\.
+A Home ganhou uma abertura narrativa, onboarding opcional, seletor persistente de idioma, tipografia de cena, guardião visual e cache offline atualizado\.
 
 [Ver atualizações no site](https://dueuler.github.io/Sage-duEuler/#atualizacoes)
 <!-- fim-atualizacao-pwa -->

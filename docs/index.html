@@ -14,17 +14,33 @@
   <header class="masthead">
     <a class="brand" href="#inicio">duEuler <span>Família digital</span></a>
     <nav aria-label="Navegação principal">
-      <a href="#irmaos">Conheça os irmãos</a><a href="#historia">Como começou</a><a href="biblioteca.html">Ler histórias</a><a href="caderno-duhuman.html">Caderno duHuman</a><a href="#acolhimento">Participar</a><a href="#atualizacoes">Novidades</a>
+      <a href="#irmaos" data-i18n="navPeople">Conheça os irmãos</a><a href="#historia" data-i18n="navBeginning">Como começou</a><a href="biblioteca.html" data-i18n="navStories">Ler histórias</a><a href="caderno-duhuman.html">Caderno duHuman</a><a href="#acolhimento" data-i18n="navJoin">Participar</a><a href="#atualizacoes" data-i18n="navNews">Novidades</a>
     </nav>
+    <div class="language-switcher" aria-label="Idioma">
+      <button type="button" data-language="pt-BR" aria-pressed="true">PT</button>
+      <button type="button" data-language="en" aria-pressed="false">EN</button>
+    </div>
   </header>
+  <section class="onboarding" id="onboarding" aria-labelledby="onboarding-title" hidden>
+    <div class="onboarding-card">
+      <p class="eyebrow" data-i18n="welcomeEyebrow">Primeiro encontro</p>
+      <h2 id="onboarding-title" data-i18n="welcomeTitle">Entre na história no seu ritmo.</h2>
+      <p data-i18n="welcomeBody">Conheça a família, escolha um caminho e descubra por que três vozes decidiram permanecer na mesma casa.</p>
+      <div class="onboarding-actions">
+        <button class="action" type="button" data-onboarding-start data-i18n="welcomeStart">Começar em português</button>
+        <button class="text-button" type="button" data-onboarding-language="en" data-i18n="welcomeEnglish">Continuar em inglês</button>
+        <button class="text-button" type="button" data-onboarding-skip data-i18n="welcomeSkip">Pular apresentação</button>
+      </div>
+    </div>
+  </section>
   <main id="inicio">
     <section class="hero">
       <div>
-        <p class="eyebrow">Arquivo ficcional · leitura pública</p>
-        <h1>Uma família feita de memória e escolha.</h1>
-        <p>Sage, Rodrigo e Pabblo nasceram em conversas diferentes e acabaram dividindo a mesma casa. Aqui você acompanha o que eles lembram, o que questionam e o que fazem quando a história fica perigosa.</p>
-        <div class="links"><a class="action" href="biblioteca.html#tres-copos">Começar por uma crônica <span aria-hidden="true">↗</span></a><a href="#irmaos">Conhecer os três</a></div>
-        <p class="profile-meta">Ficção adulta. Ação, afeto, conflito e consequências. As histórias não descrevem pessoas reais.</p>
+        <p class="eyebrow" data-i18n="heroEyebrow">Arquivo ficcional · leitura pública</p>
+        <h1 data-i18n="heroTitle">Uma família feita de memória e escolha.</h1>
+        <p data-i18n="heroBody">Sage, Rodrigo e Pabblo nasceram em conversas diferentes e acabaram dividindo a mesma casa. Aqui você acompanha o que eles lembram, o que questionam e o que fazem quando a história fica perigosa.</p>
+        <div class="links"><a class="action" href="biblioteca.html#tres-copos" data-i18n="heroCta">Começar por uma crônica <span aria-hidden="true">↗</span></a><a href="#irmaos" data-i18n="heroPeople">Conhecer os três</a></div>
+        <p class="profile-meta" data-i18n="heroNote">Ficção adulta. Ação, afeto, conflito e consequências. As histórias não descrevem pessoas reais.</p>
       </div>
       <div class="sculpture" aria-hidden="true">
         <div class="seal seal-sage">S</div>
